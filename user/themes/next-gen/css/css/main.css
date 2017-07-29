@@ -1,5 +1,48 @@
-/*job*/
+.gi-proj-card {
+  background-color: #2e343f; }
+  .gi-proj-card .card-upper, .gi-proj-card .card-lower {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 400; }
+  .gi-proj-card .card-upper {
+    text-transform: uppercase; }
+  .gi-proj-card .card-lower {
+    color: #8BDA48;
+    font-size: 1.3rem; }
+  .gi-proj-card h1 {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 5rem; }
+  .gi-proj-card .date {
+    padding-bottom: 0.2em !important; }
+
+.gi-sec-link .fa {
+  color: #8BDA48;
+  margin-left: 0.7em;
+  font-size: 1.75rem; }
+.gi-sec-link a {
+  display: inline;
+  float: right;
+  text-transform: uppercase;
+  font-weight: 400 !important; }
+
+.gi-header {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+
+.gi-sec {
+  margin-bottom: 5em; }
+
 .job-card {
+  min-height: 300px; }
+
+.event-card {
+  min-height: 170px; }
+  .event-card .header-loc {
+    margin: 0 !important; }
+
+/*job*/
+.ng-card, .job-card, .event-card {
   padding: 2em;
   overflow: none;
   height: 100%;
@@ -8,36 +51,37 @@
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-  min-height: 300px;
   margin: 0 auto;
   display: flex;
   item-align: stretch; }
-  .job-card .item {
+  .ng-card .item, .job-card .item, .event-card .item {
     flex: 1 1 auto;
     width: 20%; }
-  .job-card .card-right {
+  .ng-card .card-right, .job-card .card-right, .event-card .card-right {
     padding-left: 1.2em; }
-  .job-card .card-left {
+  .ng-card .card-left, .job-card .card-left, .event-card .card-left {
     flex: 0 0 auto; }
-  .job-card .header-mini {
+  .ng-card .header-mini, .job-card .header-mini, .event-card .header-mini {
     margin: 0 !important;
     font-weight: 600;
     color: white;
     font-size: 1.3em;
     letter-spacing: 1px;
     display: inline-block; }
-  .job-card .header-sub {
+  .ng-card .header-sub, .job-card .header-sub, .event-card .header-sub {
     margin: 0 !important;
     font-size: 1.1em;
     letter-spacing: 2px;
     font-weight: 600;
     color: white;
     line-height: 17px; }
-  .job-card .header-loc {
+  .ng-card .header-loc, .job-card .header-loc, .event-card .header-loc {
     font-size: 1em;
     letter-spacing: 0.5px;
     font-weight: 300;
     color: #cccccc; }
+  .ng-card .bottom-text, .job-card .bottom-text, .event-card .bottom-text {
+    vertical-align: text-bottom; }
 
 .job-loc-img {
   height: 100%;
