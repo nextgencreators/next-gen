@@ -1,0 +1,11 @@
+# Grav Specific
+cache/*
+assets/*
+logs/*
+images/*
+user/data/*
+user/accounts/*
+user/config/*
+composer.lock
+composer.json
+webserver-configs/*
