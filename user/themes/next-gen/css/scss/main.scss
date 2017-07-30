@@ -6,7 +6,10 @@ $green: #8BDA48;
 $lato: 'Lato';
 
 
+#event-title {
+  text-transform: uppercase !important;
 
+}
 .gi-proj-card {
   background-color: $top-bg;
   .card-upper, .card-lower {

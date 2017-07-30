@@ -1,3 +1,6 @@
+#event-title {
+  text-transform: uppercase !important; }
+
 .gi-proj-card {
   background-color: #2e343f; }
   .gi-proj-card .card-upper, .gi-proj-card .card-lower {
