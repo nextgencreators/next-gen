@@ -364,6 +364,8 @@ html {
   .event-article .event-header {
     display: block;
     position: relative; }
+  .event-article .event-header img {
+    width: 100%; }
     .event-article .event-header::after {
       clear: both;
       content: "";
@@ -374,7 +376,7 @@ html {
       top: 0;
       right: 0;
       padding: 0.25rem 1rem;
-      background: rgb(170, 178, 188);
+      background: ghostwhite;
       color: #222;
       height: 140px;
       width: 160px; }

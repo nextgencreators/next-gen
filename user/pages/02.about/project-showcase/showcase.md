@@ -1,9 +1,9 @@
 ---
-title: Programs
+title: Project Showcase
 ---
-<div class="container">
+<!-- <div class="container">
   <div class="section programs">
-    <h5 class="white-text home-sub">Our Programs</h5>
+    <h5 class="white-text home-sub">Project Showcase</h5>
     
     <div class="row">
       <div class="col s12" style="width: 85%;margin:0 auto;">
@@ -16,7 +16,7 @@ title: Programs
       </div>
       <div class="col s6">
         <div class="two-right left">
-        <h5 class="white-text">Hackathons</h5>
+        <h5 class="white-text">Project #1</h5>
         <p class="white-text">In life there will be road blocks but we will over come it. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. To succeed you must believe. When you believe, you will succeed. Cloth talk. The key to success is to keep your head above the water, never give up.</p>
         <a class="waves-effect waves-light light-blue-text accent-2  hero-learn"><i class="material-icons right">add</i>learn more</a>
       </div>
@@ -25,7 +25,7 @@ title: Programs
     <div class="row">
       <div class="col s6">
         <div class="two-right right">
-        <h5 class="white-text">Workshops</h5>
+        <h5 class="white-text">Project #2</h5>
         <p class="white-text">The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started.  You do know, you do know that they don’t want you to have lunch. I’m keeping it real with you, so what you going do is have lunch.</p>
         <a class="waves-effect waves-light light-blue-text accent-2  hero-learn"><i class="material-icons right">add</i>learn more</a>
       </div>
@@ -41,11 +41,11 @@ title: Programs
 
       <div class="col s6">
         <div class="two-right left">
-        <h5 class="white-text">Community Events</h5>
+        <h5 class="white-text">Project #3</h5>
         <p class="white-text">How’s business? Boomin. Bless up. They key is to have every key, the key to open every door. You smart, you loyal, you a genius. Hammock talk come soon. You smart, you loyal, you a genius. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started.</p>
         <a class="waves-effect waves-light light-blue-text accent-2  hero-learn"><i class="material-icons right">add</i>learn more</a>
       </div>
       </div>
     </div>
   </div>
-</div>
+</div> -->

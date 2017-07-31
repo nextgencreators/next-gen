@@ -42,7 +42,7 @@
 
     </header>
     </article>
-      <h4 class="header pt-serif white-text" id="event-title">{{ page.title }}</h4>
+      <h4 class="header white-text" id="event-title">{{ page.title }}</h4>
           {#<span class="month">{{ config.plugins.events.date_format.translate ? 'MONTHS_OF_THE_YEAR'|ta(page.header.event.start|date('n') - 1) : page.header.event.start|date('M') }} {{ page.header.event.start|date("d") }},</span>
           <span class="year"> {{ page.header.event.start|date("Y") }}</span>
           <br>
@@ -50,11 +50,9 @@
               {{ page.header.event.start|date('g:ia') }}&ndash;{{ page.header.event.end|date('g:ia') }}
           </span>#}
           
-        <div class="section" style="padding-top: 6em; font-family: 'Lato' !important;">
-        <p class="open-sans white-text">Lorem Khaled Ipsum is a major key to success. They never said winning was easy. Some people can’t handle success, I can. Let’s see what Chef Dee got that they don’t want us to eat. The key to success is to keep your head above the water, never give up. Find peace, life is like a water fall, you’ve gotta flow. They don’t want us to win. Look at the sunset, life is amazing, life is beautiful, life is what you make it. Let’s see what Chef Dee got that they don’t want us to eat.</p>
-        <p class="open-sans white-text">The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. I’m up to something. Wraith talk. Congratulations, you played yourself. Mogul talk. It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? The key to more success is to get a massage once a week, very important, major key, cloth talk.</p>
-
-        <div class="center" style="padding-top: 7em;">
+        <div class="section white-text">
+        {{ page.content }}
+        <div class="center" style="padding-top: 4em;">
         <a class="s-green waves-effect waves-light btn">volunteer</a>
         <a class="s-green waves-effect waves-light btn">donate</a>
         <a class="s-green waves-effect waves-light btn">sponsor</a>

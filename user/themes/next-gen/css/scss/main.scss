@@ -6,9 +6,20 @@ $green: #8BDA48;
 $lato: 'Lato';
 
 
+
+.project-descr {
+  width: 85%;
+  margin: 0 auto;
+}
+.img-header {
+  width: 100%;
+}
+.programs .row {
+  margin-bottom: 5em;
+}
+
 #event-title {
   text-transform: uppercase !important;
-
 }
 .gi-proj-card {
   background-color: $top-bg;
