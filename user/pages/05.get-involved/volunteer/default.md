@@ -17,7 +17,7 @@ title: Volunteer
         <p><input type="checkbox" class="filled-in" id="2" /><label for="2">I'm super organized</label></p>
         <p><input type="checkbox" class="filled-in" id="3" /><label for="3">I have lots of friends</label></p>
         <p><input type="checkbox" class="filled-in" id="4" /><label for="4">I have other cool skils</label></p>
-      </form>
+     
         </div>    
         </div>
 
@@ -27,11 +27,15 @@ title: Volunteer
       
       <div id="vf2" class="row container-inner-inner">
         <div class="input-field col s12">
-          <input id="name" type="text" class="validate">
-          <label for="name">Full Name</label>
+          <input name="first_name" id="first_name" type="text" class="validate" required>
+          <label for="first_ame">First Name</label>
         </div>
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
+          <input name="last_name" id="last_name" type="text" class="validate" required>
+          <label for="last_name">Last Name</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" required>
           <label for="email" data-error="wrong" data-success="right">Email</label>
         </div>
       </div>
@@ -40,7 +44,7 @@ title: Volunteer
         <button class="btn waves-effect waves-light" name="action" type="submit">Submit</button>
       </div>
       </div>
-
+ </form>
   </div>
 </div>
 </div>

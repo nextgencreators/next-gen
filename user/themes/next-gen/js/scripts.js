@@ -1,7 +1,14 @@
 //
-// about.html, community.html
+// form change checkbox type
 //
 
+$(document).ready(function() {
+  $(":checkbox").addClass("filled-in");
+  });
+
+//
+// about.html, community.html
+//
 
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -95,6 +102,8 @@ $(document).ready(function(){
 // become-sponsor-2.html
 // 
 
- $(document).ready(function() {
+$(document).ready(function() {
    $('select').material_select();
  });
+
+

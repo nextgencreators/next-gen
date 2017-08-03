@@ -679,6 +679,9 @@ list-style: none;
 #volunteer-form label {
   font-size: 1.5rem;
 }
+label {
+  display: block !important;
+}
 
 #volunteer-form [type="checkbox"] + label {
   color: black;
@@ -712,10 +715,18 @@ list-style: none;
   color: white !important;
 }
 
-.df .btn {
-  background-color: #aeea00 !important;
-  padding: 0 5rem !important;
+.buttons {
+  text-align: center;
+}
+.df {
+  display: inline-block;
+  margin: 0 auto;
+  .btn {
+    background-color: #aeea00 !important;
+    padding: 0 5rem !important;
+    padding-top: 2em;
   }
+}
 
 .arrow {
   color: #aeea00;
@@ -851,4 +862,8 @@ input:checked ~ nav {
 
 #top-nav nav ul li {
   float: none !important;
+}
+
+[type="checkbox"] + label:before, [type="checkbox"]:not(.filled-in) + label:after {
+  border: 2px solid #40c4ff;
 }
