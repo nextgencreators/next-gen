@@ -76,7 +76,7 @@
       
       <div id="vf2" class="row container-inner-inner">
       {% for field in form.fields %}
-    {% if field.type == 'text' %}
+    {% if (field.type == 'text') or (field.type == 'email')%}
     {% if field.type == 'file' %}
         {% do assets.addJs('plugin://form/assets/form.min.js') %}
     {% endif %}
