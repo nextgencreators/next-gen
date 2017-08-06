@@ -7,35 +7,24 @@ $(document).ready(function() {
   });
 
 //
-// about.html, community.html
+//  about.html
 //
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+});
 
-var slideIndex = 1;
-showDivs(slideIndex);
+jQuery(document).ready(function(){
+        jQuery('#datetimepicker').datepicker();
+    })
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+//
+// become-sponsor-2.html
+// 
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
+$(document).ready(function() {
+   $('select').material_select();
+ });
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
 
 //
 // about.html 
@@ -81,29 +70,45 @@ function showDivs(n) {
       }
     }
 });
-//
+
 // about.html
 //
-var map;
-function initMap() {
-map = new google.maps.Map(document.getElementById('map'), {
-  center: {lat: -34.397, lng: 150.644},
-  zoom: 8
-});
-}
-//
-//  about.html
-//
-$(document).ready(function(){
-	$('.collapsible').collapsible();
-});
+// var map;
+// function initMap() {
+// map = new google.maps.Map(document.getElementById('map'), {
+//   center: {lat: -34.397, lng: 150.644},
+//   zoom: 8
+// });
+// }
 
 //
-// become-sponsor-2.html
-// 
+// about.html, community.html
+//
 
-$(document).ready(function() {
-   $('select').material_select();
- });
+// var slideIndex = 1;
+// showDivs(slideIndex);
 
+// function plusDivs(n) {
+//   showDivs(slideIndex += n);
+// }
+
+// function currentDiv(n) {
+//   showDivs(slideIndex = n);
+// }
+
+// function showDivs(n) {
+//   var i;
+//   var x = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("demo");
+//   if (n > x.length) {slideIndex = 1}    
+//   if (n < 1) {slideIndex = x.length}
+//   for (i = 0; i < x.length; i++) {
+//      x[i].style.display = "none";  
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//      dots[i].className = dots[i].className.replace(" w3-white", "");
+//   }
+//   x[slideIndex-1].style.display = "block";  
+//   dots[slideIndex-1].className += " w3-white";
+// }
 
