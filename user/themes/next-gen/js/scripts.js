@@ -1,29 +1,30 @@
+var jq321 = $.noConflict(true);
 //
 // form change checkbox type
 //
 
 $(document).ready(function() {
   $(":checkbox").addClass("filled-in");
-  });
+});
 
 //
 //  about.html
 //
-$(document).ready(function(){
-  $('.collapsible').collapsible();
-});
-
-jQuery(document).ready(function(){
-        jQuery('#datetimepicker').datepicker();
-    })
+(function($) {
+  $(document).ready(function() {
+    $('.collapsible').collapsible();
+  });
+}(jq321));
 
 //
 // become-sponsor-2.html
 // 
 
-$(document).ready(function() {
-   $('select').material_select();
- });
+(function($) {
+  $(document).ready(function() {
+     $('select').material_select();
+  });
+}(jq321));
 
 
 //
