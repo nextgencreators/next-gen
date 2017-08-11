@@ -1,25 +1,18 @@
 var jq321 = $.noConflict(true);
-//
-// form change checkbox type
-//
 
+// form change checkbox type
 $(document).ready(function() {
   $(":checkbox").addClass("filled-in");
 });
 
-//
 //  about.html
-//
 (function($) {
   $(document).ready(function() {
     $('.collapsible').collapsible();
   });
 }(jq321));
 
-//
 // become-sponsor-2.html
-// 
-
 (function($) {
   $(document).ready(function() {
      $('select').material_select();
@@ -27,9 +20,7 @@ $(document).ready(function() {
 }(jq321));
 
 
-//
 // about.html 
-//
   new Chart(document.getElementById("bar-chart-grouped"), {
     type: 'bar',
     data: {
