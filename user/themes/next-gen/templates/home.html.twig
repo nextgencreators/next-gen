@@ -1,7 +1,7 @@
 {% extends 'partials/home_base.html.twig' %}
 {% block content %}
 <div class="hero">
-   <div id="top-nav">
+  <div id="top-nav">
       <img class="logo" src="{{ url('theme://images/logo.png') }}">
       <input id="burger" type="checkbox" />
       <label for="burger">
@@ -10,42 +10,10 @@
       <span class="bar"></span>
       </label>
       <nav>
-         <ul>
-            <li>
-               <a href="../home">Home</a>
-            </li>
-            <li>
-               <a href="../about">About Next Gen</a>
-               <ul class="dropdown">
-                  <li><a href="/about/programs">Programs</a></li>
-                  <li><a href="/about/team">Team</a></li>
-               </ul>
-            </li>
-            <li>
-               <a href="../community">Community</a>
-               <ul class="dropdown">
-                  <li><a href="/community/job-board">Job Board</a></li>
-                  <li><a href="/community/job-description">Job Description</a></li>
-               </ul>
-            </li>
-            <li>
-               <a href="/initiatives">Initiatives</a>
-               <ul class="dropdown">
-                  <li><a href="/initiatives/calendar">Laptops</a></li>
-                  <li><a href="/initiatives/events">Monitors</a></li>
-               </ul>
-            </li>
-            <li>
-               <a href="/get-involved">Get Involved</a>
-               <ul class="dropdown">
-                  <li><a href="/get-involved/become-sponsor-1">Become a Sponsor</a></li>
-                  <li><a href="/get-involved/donate">Donate</a></li>
-                  <li><a href="/get-involved/volunteer">Volunteer</a></li>
-               </ul>
-            </li>
-         </ul>
+       {% include 'partials/navigation.html.twig' %} 
+        
       </nav>
-   </div>
+    </div>
    <div class="cont">
       <h2 id="slogan">Inspiring the Next Generation</h2>
       <h5 id="hero-sub">Helping youth in the Caribbean explore their passion as techies and entrepreneurs.</h5>

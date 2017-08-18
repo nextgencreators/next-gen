@@ -1,9 +1,14 @@
 var jq321 = $.noConflict(true);
 
 // form change checkbox type
-$(document).ready(function() {
+
+
+(function($) {
+  $(document).ready(function() {
   $(":checkbox").addClass("filled-in");
 });
+}(jq321));
+
 
 //  about.html
 (function($) {
@@ -20,6 +25,45 @@ $(document).ready(function() {
 }(jq321));
 
 
+// about.htm pagination 
+var num = 1;
+showDiv(num);
+
+function incr(n) {
+  showDiv(num += n);
+}
+
+function curr(n) {
+  showDiv(num = n);
+}
+
+function showDiv(n) {
+  var gallery = document.getElementsByClassName("slider-image");
+  var indicator = document.getElementsByClassName("img-num");
+  if (n > gallery.length) {
+    num = 1;
+  } else if (n < 1) {
+    num = gallery.length;
+  }
+  for (var i = 0; i < gallery.length; i++) {
+      if (i == num-1) {
+        gallery[i].style.display = "block";
+      }
+      else { 
+        gallery[i].style.display = "none";
+      }
+  }
+   for (var i = 0; i < indicator.length; i++) {
+      indicator[i].classList.remove("active");
+  }
+    indicator[num-1].className += " active";
+
+  // for (i = 0; i < indicator.length; i++) {
+  //   indicator[i].className += "active";
+  // }
+
+  // indicator[n-1].className += "active";
+}
 // about.html 
   new Chart(document.getElementById("bar-chart-grouped"), {
     type: 'bar',
@@ -64,14 +108,14 @@ $(document).ready(function() {
 });
 
 // about.html
-//
-// var map;
-// function initMap() {
-// map = new google.maps.Map(document.getElementById('map'), {
-//   center: {lat: -34.397, lng: 150.644},
-//   zoom: 8
-// });
-// }
+
+var map;
+function initMap() {
+map = new google.maps.Map(document.getElementById('map'), {
+  center: {lat: -34.397, lng: 150.644},
+  zoom: 8
+});
+}
 
 //
 // about.html, community.html

@@ -27,6 +27,7 @@
 
 {% endblock head %}
 </head>
+<body>
    <div id="top-nav">
       <img class="logo" src="{{ url('theme://images/logo.png') }}">
       <input id="burger" type="checkbox" />
@@ -36,41 +37,8 @@
       <span class="bar"></span>
       </label>
       <nav>
-      {# {% include 'partials/navigation.html.twig' %} #}
-        <ul>
-          <li>
-            <a href="../home">Home</a>
-          </li>
-          <li>
-            <a href="../about">About Next Gen</a>
-            <ul class="dropdown">
-                <li><a href="../about/programs">Programs</a></li>
-                <li><a href="../about/team">Team</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="../community">Community</a>
-            <ul class="dropdown">
-                <li><a href="/community/job-board">Job Board</a></li>
-                <li><a href="/community/job-description">Job Description</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="../initiatives">Initiatives</a>
-            <ul class="dropdown">
-                <li><a href="/initiatives/calendar">Laptops</a></li>
-                <li><a href="/initiatives/events">Monitors</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="../get-involved">Get Involved</a>
-            <ul class="dropdown">
-                <li><a href="/get-involved/become-sponsor-1">Become a Sponsor</a></li>
-                <li><a href="/get-involved/donate">Donate</a></li>
-                <li><a href="/get-involved/volunteer">Volunteer</a></li>
-            </ul>
-          </li>
-        </ul>
+       {% include 'partials/navigation.html.twig' %} 
+        
       </nav>
     </div>
     <main>

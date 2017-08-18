@@ -127,7 +127,7 @@
     margin: 0 auto;
     width: auto !important; } }
 blockquote {
-  border-left: 5px solid #40c4ff !important; }
+  color: #40c4ff; }
 
 .poly {
   border: 2px solid #40c4ff;
@@ -817,4 +817,4 @@ label {
 .form-input-file input {
   display: block !important; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.cs.map */
