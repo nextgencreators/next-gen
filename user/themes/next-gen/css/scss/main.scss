@@ -1,12 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400');
+
 $top-bg: rgb(46,52,63);
 $center-bg: rgb(58,65,79);
 $footer-bg: #292e38;
 $blue-border: #2ad6fa;
 $green: #8BDA48;
 $lato: 'Lato';
+$source-sans: 'Source Sans Pro';
+$raleway: 'Raleway';
+$muli: 'Muli';
 $bright-blue: #40c4ff;
 
 
+.page-container {
+  margin-top: 3.5em;
+}
+.source-sans {
+  font-family: $source-sans, sans-serif;
+}
+.muli {
+  font-family: $muli;
+  font-weight: 200;
+}
+.raleway {
+  font-family: $raleway, sans-serif;
+  font-weight: 200;
+}
+.header {
+  font-weight: bold;
+}
+.page-header {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Arial;
+  display: inline-block;
+  padding: 0 5px 3px 0;
+  border-bottom: 6px solid $green;
+  margin: 0;
+  position: relative;
+}
+.page-header:after {
+  content: "";
+  width: 6px;
+  height: 7px;
+  display: block;
+  background-color: $green;
+  position: absolute;
+  right: -3.5px;
+  bottom: -4px;
+  transform: rotate(-35deg);
+}
 
 .project-descr {
   width: 85%;
@@ -19,6 +66,22 @@ $bright-blue: #40c4ff;
   margin-bottom: 5em;
 }
 
+.indiv-img-cover-wrapper {
+  height: 21em;
+}
+.indiv-img-cover {
+  width: 100%;
+  height: 100%;
+}
+
+.category-list-title {
+  color: white;
+  font-weight: 600;
+}
+.inner-p-font p {
+  font-family: $muli;
+  font-weight: 300;
+}
 #event-title {
   text-transform: uppercase !important;
 }
@@ -114,7 +177,7 @@ $bright-blue: #40c4ff;
     font-size: 1.3em;
     letter-spacing: 1px;
     display: inline-block;
-  } 
+  }
   .header-sub {
     margin: 0 !important;
     font-size: 1.1em;
@@ -122,12 +185,13 @@ $bright-blue: #40c4ff;
     font-weight: 600;
     color: white;
     line-height: 17px;
-  } 
+  }
   .header-loc {
     font-size: 1em;
     letter-spacing: 0.5px;
-    font-weight: 300;
+    font-weight: 400;
     color: #cccccc;
+    margin: 0 auto;
   }
   .bottom-text {
    vertical-align: text-bottom;
@@ -150,30 +214,35 @@ $bright-blue: #40c4ff;
   line-height: 17.5px;
 }
 
-
+#quote {
+  font-weight: 300;
+  font-style: italic;
+}
+#quote-person {
+  font-weight: 300;
+}
 #about-team-sec .card {
   margin: 0 auto;
 /*  width: 15em !important;*/
 }
-
-#slider-img {
-
+.profile-card {
+  width: 14em;
+  margin: 0 auto;
 }
-
+.profile-card {
+  .card-content .card-title {
+    margin: 0;
+    line-height: 1;
+  }
+  .card-content {
+    padding: 15px 24px;
+  }
+}
+.slider-img.responsive-img {
+  max-width: 40em !important;
+}
 #slider-img.l1 {
   background-image: url(https://static.pexels.com/photos/207962/pexels-photo-207962.jpeg);
-}
-#slider-img.l2 {
-
-}
-#slider-img.l3 {
-
-}
-#slider-img.l4 {
-
-}
-#slider-img.l5 {
-
 }
 .pagination li a {
   color: white !important;
@@ -312,7 +381,7 @@ ul li ul.dropdown{
   position: relative;
 }
 ul li:hover ul.dropdown{
-  display: block; 
+  display: block;
 }
 ul li ul.dropdown li{
   display: block;
@@ -423,7 +492,7 @@ nav ul a:hover {
   width: 100%;
   background-color: #3a414f;
   position: relative;
-  background-image: url('../../images/hero.jpg'); 
+  background-image: url('../../images/hero.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -457,7 +526,7 @@ nav ul a:hover {
 
 
 .module {
-  background: 
+  background:
    /* linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
@@ -504,7 +573,7 @@ nav ul a:hover {
   color: $green;
   font-size: 40px !important;
 }
-.home-programs i {
+.home-fs i {
   font-size: 22px !important;
 }
 
@@ -533,6 +602,12 @@ nav ul a:hover {
 .two-right {
   width: 85%;
 }
+.l-program {
+  margin-left: 2.7em;
+}
+.r-program {
+  margin-right: 2.7em;
+}
 .home-sub-green {
   color: $green;
   font-size: 1.5rem;
@@ -554,6 +629,14 @@ nav ul a:hover {
   }
 }
 
+.about-below-text {
+  width: 20em;
+  margin: 0 auto;
+}
+
+.slider-img.responsive-img {
+  max-width: 20em !important;
+}
 
 @media only screen and (max-width: 675px) {
   .home-below-text {
@@ -613,17 +696,17 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
   }
 }
 
-.ch-img-1 { 
+.ch-img-1 {
   background-image: url("https://s-media-cache-ak0.pinimg.com/236x/a5/eb/3a/a5eb3a67262b715bd938bb798ff21a9b--wood-planters-succulent-planters.jpg");
   background-size: cover;
 }
 
-.ch-img-2 { 
+.ch-img-2 {
   background-image: url("https://s-media-cache-ak0.pinimg.com/236x/a5/eb/3a/a5eb3a67262b715bd938bb798ff21a9b--wood-planters-succulent-planters.jpg");
   background-size: cover;
 }
 
-.ch-img-3 { 
+.ch-img-3 {
   background-image: url("https://s-media-cache-ak0.pinimg.com/236x/a5/eb/3a/a5eb3a67262b715bd938bb798ff21a9b--wood-planters-succulent-planters.jpg");
   background-size: cover;
 }
@@ -635,7 +718,7 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
   overflow: hidden;
   position: relative;
   cursor: default;
-  box-shadow: 
+  box-shadow:
     inset 0 0 0 16px rgba(255,255,255,0.6),
     0 1px 2px rgba(0,0,0,0.1);
   transition: all 0.4s ease-in-out;
@@ -659,8 +742,8 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
   margin: 0 30px;
   padding: 45px 0 0 0;
   height: 140px;
-  text-shadow: 
-    0 0 1px #fff, 
+  text-shadow:
+    0 0 1px #fff,
     0 1px 2px rgba(0,0,0,0.3);
 }
 .ch-info p {
@@ -687,7 +770,7 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
   color: rgba(255,242,34, 0.8);
 }
 .ch-item:hover {
-  box-shadow: 
+  box-shadow:
     inset 0 0 0 1px rgba(255,255,255,0.1),
     0 1px 2px rgba(0,0,0,0.1);
 }
@@ -759,9 +842,9 @@ list-style: none;
 }
 */
 .carousel .item {
-  min-height: calc(100vh*0.4); 
+  min-height: calc(100vh*0.4);
   height: 100%;
-  width: 100%; 
+  width: 100%;
 }
 
 .carousel .icon-container {
@@ -842,7 +925,7 @@ list-style: none;
 /*  color: #64dd17 !important;*/
 }
 
-.select-wrapper input.select-dropdown { 
+.select-wrapper input.select-dropdown {
   text-align: center;
 }
 

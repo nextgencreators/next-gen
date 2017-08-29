@@ -3,9 +3,12 @@
 {% block content %}
 
 <main>
-<div class="section no-pad-bot" id="index-banner">
-<div class="container">
+<div class="container page-container">
+  <h3 class="page-header white-text">Project Showcase</h3>
   <div class="container">
+  <div class="section">
+  </div>
+  <div class="section">
 {% for job in jobs %}
     <div class="col s12 m7 spacing">
         <div class="job-card">
@@ -14,15 +17,14 @@
            </div>
            <div class="item card-right">
               <h3 class="header-mini">{{ job.title }}</h3>
-              <a href="{{ job.url }}"><h3 class="header-sub">See More</h3></a>
-              <div class="job-desc">{{ job.content }}</div>
               <h3 class="header-loc">{{ job.header.location }}</h3>
+              <div class="job-desc muli">{{ job.content }}</div>
+              <a class="waves-effect waves-light light-blue-text accent-2  hero-learn" href="{{ job.url }}"><i class="material-icons r-program right">add</i>learn more</a>
            </div>
         </div>
      </div>
       {% endfor %}
-
-</div>
+  </div>
 </div>
 </div>
 </main>

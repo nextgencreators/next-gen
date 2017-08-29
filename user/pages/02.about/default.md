@@ -6,12 +6,16 @@ title: About
 <div class="section no-pad-bot" id="index-banner">
 <div class="container">
    <!--    <div class="container-inner"> -->
-   <h3 class="header white-text">About Next Gen</h3>
-   <blockquote><p class="white-text">You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. Wraith talk. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. </p></blockquote>
-
-
- 
-<div class="row ">
+   <h3 class="page-header white-text">About Next Gen</h3>
+   <div class="section">
+      <div class="row">
+         <div class="col s6">
+            <h5 id="quote" class="white-text">"Next-Gen has made such a positive impact on my life. I would not be where I am today if not for them."</h5>
+            <h5 id="quote-person" class="white-text">- Anonymous</h5>
+         </div>
+      </div>
+   </div>
+   <div class="row">
       <h5 class="header center subtext white-text">Our Approach</h5>
       <div class="row">
          <div class="col s12 m4">
@@ -37,54 +41,120 @@ title: About
          </div>
       </div>
    </div>
+   <!-- adfasdf -->
+   <div class="row">
+     <div class="col s6">
+        <h5 class="header center subtext white-text">Our Impact</h5>
+        <div id="1" class="l1 slider-image valign-wrapper center-align row">
+           <div class="col s12">
+              <div class="hmph">
+                 <img class="slider-img responsive-img z-depth-1" src="https://s-media-cache-ak0.pinimg.com/originals/c7/85/6c/c7856c99bb69561e1b9b49d4999860d8.jpg">
+              </div>
+           </div>
+        </div>
+        <div id="2" class="l2 slider-image valign-wrapper center-align row">
+           <div class="col s12">
+              <div class="hmph">
+                 <img class="slider-img responsive-img z-depth-1" src="https://ak.picdn.net/assets/cms/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg">
+              </div>
+           </div>
+        </div>
+        <div id="3" class="l3 slider-image valign-wrapper center-align row">
+           <div class="col s12">
+              <div class="hmph">
+                 <img class="slider-img responsive-img z-depth-1" src="https://ak.picdn.net/assets/cms/71663cb9a048668b680962f2ac5cc5753364e9f2-stock-vector-glitch-abstract-background-with-distortion-effect-random-horizontal-orange-and-green-color-lines-552670291.jpg">
+              </div>
+           </div>
+        </div>
+        <div id="4" class="l4 slider-image valign-wrapper center-align row">
+           <div class="col s12">
+              <div class="hmph">
+                 <img class="slider-img responsive-img z-depth-1" src="http://skyrocketradio.com/wp-content/uploads/2016/05/death_to_stock_photo_chicago_vhbvhb.jpg">
+              </div>
+           </div>
+        </div>
+        <div id="5" class="l5 slider-image valign-wrapper center-align row">
+           <div class="col s12">
+              <div class="hmph">
+                 <img class="slider-img responsive-img z-depth-1" src="https://www.ethos3.com/wp-content/uploads/2015/12/free-stock-photo1.jpg">
+              </div>
+           </div>
+        </div>
+        <ul class="pagination center">
+           <li onclick="incr(-1)" class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+           <li onclick="curr(1)" class="img-num waves-effect"><a href="#!">1</a></li>
+           <li onclick="curr(2)" class="img-num waves-effect"><a href="#!">2</a></li>
+           <li onclick="curr(3)" class="img-num waves-effect"><a href="#!">3</a></li>
+           <li onclick="curr(4)" class="img-num waves-effect"><a href="#!">4</a></li>
+           <li onclick="curr(5)" class="img-num waves-effect"><a href="#!">5</a></li>
+           <li onclick="incr(1)" class="img-num waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+     </div>
+      <div class="col s6">
+         <div class="section">
+            <div class="about-below-text left-align">
+               <p class="white-text">You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. Eliptical talk. Fan luv. Find peace, life is like a water fall, you’ve gotta flow. </p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- adf -->
    <div class="row">
       <div class="section home-join">
-         <h5 class="header center subtext white-text">Our Impact</h5>
-         <p class="white-text">Lorem Khaled Ipsum is a major key to success. We don’t see them, we will never see them. Learning is cool, but knowing is better, and I know the key to success.</p>
-         <div id="1" class="l1 slider-image valign-wrapper center-align row">
-            <div class="col s12">
-               <div class="hmph">
-                  <img class="responsive-img z-depth-1" src="https://s-media-cache-ak0.pinimg.com/originals/c7/85/6c/c7856c99bb69561e1b9b49d4999860d8.jpg">
+         <div class="col s6">
+            <h5 class="header center subtext white-text">Our Impact</h5>
+            <div id="1" class="l1 slider-image valign-wrapper center-align row">
+               <div class="col s12">
+                  <div class="hmph">
+                     <img class="slider-img responsive-img z-depth-1" src="https://s-media-cache-ak0.pinimg.com/originals/c7/85/6c/c7856c99bb69561e1b9b49d4999860d8.jpg">
+                  </div>
+               </div>
+            </div>
+            <div id="2" class="l2 slider-image valign-wrapper center-align row">
+               <div class="col s12">
+                  <div class="hmph">
+                     <img class="slider-img responsive-img z-depth-1" src="https://ak.picdn.net/assets/cms/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg">
+                  </div>
+               </div>
+            </div>
+            <div id="3" class="l3 slider-image valign-wrapper center-align row">
+               <div class="col s12">
+                  <div class="hmph">
+                     <img class="slider-img responsive-img z-depth-1" src="https://ak.picdn.net/assets/cms/71663cb9a048668b680962f2ac5cc5753364e9f2-stock-vector-glitch-abstract-background-with-distortion-effect-random-horizontal-orange-and-green-color-lines-552670291.jpg">
+                  </div>
+               </div>
+            </div>
+            <div id="4" class="l4 slider-image valign-wrapper center-align row">
+               <div class="col s12">
+                  <div class="hmph">
+                     <img class="slider-img responsive-img z-depth-1" src="http://skyrocketradio.com/wp-content/uploads/2016/05/death_to_stock_photo_chicago_vhbvhb.jpg">
+                  </div>
+               </div>
+            </div>
+            <div id="5" class="l5 slider-image valign-wrapper center-align row">
+               <div class="col s12">
+                  <div class="hmph">
+                     <img class="slider-img responsive-img z-depth-1" src="https://www.ethos3.com/wp-content/uploads/2015/12/free-stock-photo1.jpg">
+                  </div>
+               </div>
+            </div>
+            <ul class="pagination center">
+               <li onclick="incr(-1)" class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+               <li onclick="curr(1)" class="img-num waves-effect"><a href="#!">1</a></li>
+               <li onclick="curr(2)" class="img-num waves-effect"><a href="#!">2</a></li>
+               <li onclick="curr(3)" class="img-num waves-effect"><a href="#!">3</a></li>
+               <li onclick="curr(4)" class="img-num waves-effect"><a href="#!">4</a></li>
+               <li onclick="curr(5)" class="img-num waves-effect"><a href="#!">5</a></li>
+               <li onclick="incr(1)" class="img-num waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+         </div>
+         <div class="col s6">
+            <div class="section">
+               <div class="about-below-text left-align">
+                  <p class="white-text">You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. Eliptical talk. Fan luv. Find peace, life is like a water fall, you’ve gotta flow. </p>
                </div>
             </div>
          </div>
-         <div id="2" class="l2 slider-image valign-wrapper center-align row">
-            <div class="col s12">
-               <div class="hmph">
-                  <img class="responsive-img z-depth-1" src="https://ak.picdn.net/assets/cms/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg">
-               </div>
-            </div>
-         </div>
-         <div id="3" class="l3 slider-image valign-wrapper center-align row">
-            <div class="col s12">
-               <div class="hmph">
-                  <img class="responsive-img z-depth-1" src="https://ak.picdn.net/assets/cms/71663cb9a048668b680962f2ac5cc5753364e9f2-stock-vector-glitch-abstract-background-with-distortion-effect-random-horizontal-orange-and-green-color-lines-552670291.jpg">
-               </div>
-            </div>
-         </div>
-         <div id="4" class="l4 slider-image valign-wrapper center-align row">
-            <div class="col s12">
-               <div class="hmph">
-                  <img class="responsive-img z-depth-1" src="http://skyrocketradio.com/wp-content/uploads/2016/05/death_to_stock_photo_chicago_vhbvhb.jpg">
-               </div>
-            </div>
-         </div>
-         <div id="5" class="l5 slider-image valign-wrapper center-align row">
-            <div class="col s12">
-               <div class="hmph">
-                  <img class="responsive-img z-depth-1" src="https://www.ethos3.com/wp-content/uploads/2015/12/free-stock-photo1.jpg">
-               </div>
-            </div>
-         </div>
-         <ul class="pagination center">
-            <li onclick="incr(-1)" class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-            <li onclick="curr(1)" class="img-num waves-effect"><a href="#!">1</a></li>
-            <li onclick="curr(2)" class="img-num waves-effect"><a href="#!">2</a></li>
-            <li onclick="curr(3)" class="img-num waves-effect"><a href="#!">3</a></li>
-            <li onclick="curr(4)" class="img-num waves-effect"><a href="#!">4</a></li>
-            <li onclick="curr(5)" class="img-num waves-effect"><a href="#!">5</a></li>
-            <li onclick="incr(1)" class="img-num waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-         </ul>
       </div>
    </div>
    <div class="s abt-fun">
