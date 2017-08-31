@@ -1,5 +1,5 @@
 ---
-title: Volunteer
+title: Contact Form
 page_title: Want to Volunteer?
 form:
     name: volunteer-form

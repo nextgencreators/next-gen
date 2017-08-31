@@ -1,5 +1,5 @@
 ---
-title: Sponsor
+title: Sponsor Form
 page_title: Sponsor Us!
 form:
     name: sponsor-form
