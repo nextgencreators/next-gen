@@ -2,8 +2,7 @@
 
 {% block content %}
 <div class="container page-container">
-  <h3 class="page-header white-text">{{ page_title }}</h3>
-  <div class="container">
+  <h3 class="page-header white-text">{{ header.page_title }}</h3>
   <div class="section">
   </div>
   <div class="section">
@@ -65,13 +64,13 @@
       {% endif %}
   {% endfor %}
   </div>
-
+</div>
   {% include "forms/fields/formname/formname.html.twig" %}
 
   {% block inner_markup_fields_end %}{% endblock %}
 
   {% block inner_markup_buttons_start %}
-  <div class="buttons">
+  <div class="buttons button-section">
   {% endblock %}
 
   {% for button in form.buttons %}
@@ -106,6 +105,5 @@
   {{ nonce_field('form', 'form-nonce')|raw }}
 </form>
 </div>
-  </div>
   </div>
 {% endblock %}

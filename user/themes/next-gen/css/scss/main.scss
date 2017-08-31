@@ -18,6 +18,9 @@ $bright-blue: #40c4ff;
 .page-container {
   margin-top: 3.5em;
 }
+.top-padding {
+  padding-top: 1em;
+}
 .source-sans {
   font-family: $source-sans, sans-serif;
 }
@@ -929,7 +932,38 @@ list-style: none;
   text-align: center;
 }
 
-#volunteer-form {
+.volunteer-section {
+  background-color: white;
+  border: 2.4px solid #40c4ff;
+  border-radius: 14px;
+  padding: 2.5rem 2rem 1rem 3rem;
+  margin-bottom: 2rem;
+  label {
+    font-size: 1.5rem;
+  }
+}
+
+label {
+  display: block !important;
+}
+
+.volunteer-section [type="checkbox"] + label {
+  color: black;
+  height: 3.7rem !important;
+  line-height: 18px !important;
+}
+
+.volunteer-section [type="checkbox"].filled-in:checked + label:after {
+  border: 2px solid #40c4ff !important;
+  background-color: #40c4ff !important;
+}
+
+
+.volunteer-section [type="checkbox"].filled-in:not(:checked) + label:after {
+    border: 2px solid #40c4ff !important;
+}
+
+/*#volunteer-form {
   background-color: white;
   padding: 1em 2em;
   margin-bottom: 2em;
@@ -957,14 +991,21 @@ label {
 
 #volunteer-form [type="checkbox"].filled-in:not(:checked) + label:after {
     border: 2px solid #40c4ff !important;
-}
+}*/
 
 #vf2 {
   color: white;
   margin: 0 auto;
 }
-#vf2 input[type=text]:not(.browser-default), input[type=email]:not(.browser-default) {
+/*#vf2 input[type=text]:not(.browser-default), input[type=email]:not(.browser-default) {
   border-bottom: 1px solid #40c4ff !important;
+}*/
+#vf2 input[type=text]:not(.browser-default), input:not(.browser-default) {
+  border-bottom: 1px solid #40c4ff !important;
+}
+
+input:not([type=checkbox]):not(.browser-default):focus:not([readonly]) + label {
+  color: #40c4ff !important;
 }
 
 #vf2 textarea.materialize-textarea {
@@ -976,6 +1017,9 @@ label {
 
 .buttons {
   text-align: center;
+}
+.button-section {
+  margin-top: 3rem;
 }
 .df {
   display: inline-block;
@@ -1129,4 +1173,8 @@ input:checked ~ nav {
 
 .form-input-file input {
     display: block !important;
+}
+
+.input-field label {
+  color: white;
 }

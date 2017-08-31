@@ -9,6 +9,7 @@ form:
 
         - name: Company
           label: Company
+          id: company-field
           autocomplete: on
           type: text
           outerclasses: col s12
@@ -17,6 +18,7 @@ form:
 
         - name: Contact
           label: Contact
+          id: contact-field
           autocomplete: on
           type: text
           outerclasses: col s12
@@ -25,6 +27,7 @@ form:
 
         - name: Address
           label: Address
+          id: address-field
           autocomplete: on
           type: text
           outerclasses: col s12
@@ -33,6 +36,7 @@ form:
 
         - name: State
           label: State
+          id: state-field
           autocomplete: on
           type: text
           outerclasses: col s12
@@ -41,6 +45,7 @@ form:
 
         - name: City
           label: City
+          id: city-field
           autocomplete: on
           type: text
           outerclasses: col s12
@@ -49,6 +54,7 @@ form:
 
         - name: Zipcode
           label: Zipcode
+          id: zipcode-field
           autocomplete: on
           type: text
           outerclasses: col s12
@@ -57,21 +63,20 @@ form:
 
         - name: Phone-number
           label: Phone-number
+          id: phone-number-field
           autocomplete: on
           type: text
           outerclasses: col s12
           validate:
             required: true
-          id: name
 
-        - name: Email
+        - name: email
           label: Email
+          id: email-field
           type: email
           outerclasses: col s12
           validate:
             required: true
-          id: email
-
 
     buttons:
         - type: submit
