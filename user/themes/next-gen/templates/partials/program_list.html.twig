@@ -1,0 +1,35 @@
+{% for prog in programs %}
+<div class="section">
+  {% if loop.index is odd %}
+  <div class="row">
+  <div class="col s6">
+    {% for image in prog.media.images %}
+      {{ image.html('t', 'programs', 'l-program left programs-img responsive-img') }}
+    {% endfor %}
+  </div>
+  <div class="col s6 inner-p-font">
+    <div class="white-text two-right r-program right">
+      <h5><a class="category-list-title" href="{{ prog.url }}">{{ prog.title }}</a></h5>
+      <p>{{ prog.content | truncate(400, true)}}. . . . . .</p>
+      <a class="waves-effect waves-light light-blue-text accent-2  hero-learn" href="{{ prog.url }}"><i class="material-icons r-program right">add</i>learn more</a>
+    </div>
+  </div>
+  </div>
+  {% else %} 
+  <div class="row">
+  <div class="col s6 inner-p-font">
+    <div class="white-text two-right l-program left">
+      <h5><a class="category-list-title" href="{{ prog.url }}">{{ prog.title }}</a></h5>
+      <p>{{ prog.content | truncate(400, true) }}. . . . . .</p>
+      <a class="waves-effect waves-light light-blue-text accent-2  hero-learn" href="{{ prog.url }}"><i class="material-icons r-program right">add</i>learn more</a>
+    </div>
+  </div>
+  <div class="col s6 inner-p-font">
+    {% for image in prog.media.images %}
+      {{ image.html('t', 'programs', 'r-program right programs-img responsive-img') }}
+    {% endfor %}
+  </div>
+  </div>
+  </div>
+  {% endif %}
+{% endfor %}

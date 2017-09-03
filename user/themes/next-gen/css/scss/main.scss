@@ -58,6 +58,10 @@ $bright-blue: #40c4ff;
   transform: rotate(-35deg);
 }
 
+.under-header-text {
+  font-size: 1.15rem;
+}
+
 .project-descr {
   width: 85%;
   margin: 0 auto;
@@ -210,11 +214,11 @@ $bright-blue: #40c4ff;
   margin-bottom: 2.5em !important;
 }
 
-.job-desc {
+.job-desc, .job-desc p {
   padding-top: 5px;
   color: white;
-  font-size: 0.8em;
-  line-height: 17.5px;
+  font-size: 0.9em;
+  line-height: 19px;
 }
 
 #quote {
@@ -242,7 +246,7 @@ $bright-blue: #40c4ff;
   }
 }
 .slider-img.responsive-img {
-  max-width: 40em !important;
+  max-width: 100% !important;
 }
 #slider-img.l1 {
   background-image: url(https://static.pexels.com/photos/207962/pexels-photo-207962.jpeg);
@@ -635,10 +639,6 @@ nav ul a:hover {
 .about-below-text {
   width: 20em;
   margin: 0 auto;
-}
-
-.slider-img.responsive-img {
-  max-width: 20em !important;
 }
 
 @media only screen and (max-width: 675px) {

@@ -1,58 +1,14 @@
 ---
 title: 'Get Involved'
 ---
-<div class="container">
-	<div class="section gi-sec " id="index-banner">
-		<h4 class="header pt-serif white-text">Get Involved</h4>
-		<div class="container">
-			<div class="gi-header">
-				<h4 class="header center white-text">Events</h4>
-			</div>
-				<div class="col s12 m7 spacing">
-					<div class="event-card">
-						<div class="item card-left">
-							<img class="job-loc-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empire_State_Building_%28HDR%29.jpg/150px-Empire_State_Building_%28HDR%29.jpg" >
-						</div>
-						<div class="item card-right">
-							<h3 class="header-mini">Software Engineer</h3>
-							<h3 class="header-sub">Google Inc.</h3>
-							<p class="job-desc">Lorem Khaled Ipsum is a major key to success. You do know, you do know that they don’t want you to have lunch. I’m keeping it real with you, so what you going do is have lunch. They don’t want us to win. The key to more success is to have a lot of pillows.
-							</p>
-							<div class="bottom-text">
-								<h3 class="header-loc">Mountain View, California</h3>
-								<a class="waves-effect waves-light light-blue-text accent-2  hero-learn"><i class="material-icons right">add</i>learn more</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			<div class="col s12 m7 spacing">
-				<div class="event-card">
-					<div class="item card-left">
-						<img class="job-loc-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empire_State_Building_%28HDR%29.jpg/150px-Empire_State_Building_%28HDR%29.jpg" >
-					</div>
-					<div class="item card-right">
-						<h3 class="header-mini">Software Engineer</h3>
-						<h3 class="header-sub">Google Inc.</h3>
-						<p class="job-desc">Lorem Khaled Ipsum is a major key to success. You do know, you do know that they don’t want you to have lunch. I’m keeping it real with you, so what you going do is have lunch. They don’t want us to win. The key to more success is to have a lot of pillows.
-						</p>
-						<div class="bottom-text">
-							<h3 class="header-loc">Mountain View, California</h3>
-							<a class="waves-effect waves-light light-blue-text accent-2  hero-learn"><i class="material-icons right">add</i>learn more</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="gi-sec-link">
-				<a href="#" class="white-text">See all Projects<i class="fa fa-lg fa-angle-double-right" aria-hidden="true"></i></a>
-			</div>
-		</div>
-	</div>
+<div class="container page-container">
+<h3 class="page-header white-text">Get Involved</h3>
 	<div class="section gi-sec" id="index-banner">
 		<div class="gi-header">
-			<h4 class="header center white-text">Projects</h4>
+			<h4 class="header center white-text">Events</h4>
 			<div class="container">
 				<div class="col s12 m7 spacing">
-					<p class="white-text center">Here's what we're working on!</p>
+					<p class="white-text center">We have some exciting events coming up and we'd love to meet you there!</p>
 				</div>
 				<div class="row center-align">
 					<div class="col s4">
@@ -87,9 +43,56 @@ title: 'Get Involved'
 					</div>
 				</div>
 				<div class="gi-sec-link">
-					<a href="#" class="white-text">See all Projects<i class="fa fa-lg fa-angle-double-right" aria-hidden="true"></i></a>
+					<a href="#" class="white-text">See all Events<i class="fa fa-lg fa-angle-double-right" aria-hidden="true"></i></a>
 				</div>
 
+			</div>
+		</div>
+	</div>
+	<div class="section gi-sec" id="index-banner">
+		<div class="container">
+			<div class="gi-header">
+				<h4 class="header center white-text">Projects</h4>
+				<div class="col s12 m7 spacing">
+					<p class="white-text center">Here's what we're working on!</p>
+				</div>
+			</div>
+				<div class="col s12 m7 spacing">
+					<div class="event-card">
+						<div class="item card-left">
+							<img class="job-loc-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empire_State_Building_%28HDR%29.jpg/150px-Empire_State_Building_%28HDR%29.jpg" >
+						</div>
+						<div class="item card-right">
+							<h3 class="header-mini">Software Engineer</h3>
+							<h3 class="header-sub muli">Google Inc.</h3>
+							<p class="job-desc muli">Lorem Khaled Ipsum is a major key to success. You do know, you do know that they don’t want you to have lunch. I’m keeping it real with you, so what you going do is have lunch. They don’t want us to win. The key to more success is to have a lot of pillows.
+							</p>
+							<div class="bottom-text">
+								<h3 class="header-loc">Mountain View, California</h3>
+								<a class="waves-effect waves-light light-blue-text accent-2  hero-learn"><i class="material-icons right">add</i>learn more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="col s12 m7 spacing">
+				<div class="event-card">
+					<div class="item card-left">
+						<img class="job-loc-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empire_State_Building_%28HDR%29.jpg/150px-Empire_State_Building_%28HDR%29.jpg" >
+					</div>
+					<div class="item card-right">
+						<h3 class="header-mini">Software Engineer</h3>
+						<h3 class="header-sub muli">Google Inc.</h3>
+						<p class="job-desc muli">Lorem Khaled Ipsum is a major key to success. You do know, you do know that they don’t want you to have lunch. I’m keeping it real with you, so what you going do is have lunch. They don’t want us to win. The key to more success is to have a lot of pillows.
+						</p>
+						<div class="bottom-text">
+							<h3 class="header-loc">Mountain View, California</h3>
+							<a class="waves-effect waves-light light-blue-text accent-2  hero-learn"><i class="material-icons right">add</i>learn more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gi-sec-link">
+				<a href="#" class="white-text">See all Projects<i class="fa fa-lg fa-angle-double-right" aria-hidden="true"></i></a>
 			</div>
 		</div>
 	</div>
@@ -115,7 +118,7 @@ title: 'Get Involved'
 					</li>
 				</ul>
 				<div class="gi-sec-link">
-					<a href="#" class="white-text">See all Projects<i class="fa fa-lg fa-angle-double-right" aria-hidden="true"></i></a>
+					<a href="#" class="white-text">See all Programs<i class="fa fa-lg fa-angle-double-right" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</div>

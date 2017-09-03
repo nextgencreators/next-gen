@@ -1,0 +1,162 @@
+{% extends 'partials/base.html.twig' %}
+{% block content %}
+{% set programs = page.collection({'items':{'@page.children':'/about/programs'}, 'pagination': true, 'limit': 10, 'order': {'by': 'default', 'dir': 'asc'}}) %}
+<div class="container page-container">
+   <h3 class="page-header white-text">Our Community</h3>
+   <div class="row">
+      <div class="col s8">
+         <p class="white-text muli under-header-text">Hello there! We are a non-profit organization providing a platform for youth to explore their skills as entrepreneurs and innovators through events and projects that provides opportunites for real-life application. We empower the Caribbean and Latin America regions' young developers, designers, and tech-entrepreneurs.</p>
+      </div>
+   </div>
+   <div class="section gi-sec" id="index-banner">
+      <div class="gi-header">
+         <h4 class="header center white-text">Get Involved</h4>
+         <div class="col s12 m7 spacing">
+            <p class="white-text center">Here's some of our events, we'd love to see you there!</p>
+         </div>
+      </div>
+      {% include 'partials/program_list.html.twig' %} 
+   </div>
+   <div class="section gi-sec" id="index-banner">
+         <div class="gi-header">
+            <!-- change inline-styling later, temporary fix -->
+            <h4 style="margin-top: 5em;" class="header center white-text">Our Effects</h4>
+            <div class="col s12 m7 spacing">
+               <p class="white-text center">Check out what we've been up to!</p>
+            </div>
+         </div>
+         <!-- adf -->
+   <div class="row">
+      <div class="section">
+            <div id="1" class="l1 slider-image valign-wrapper center-align row">
+               <div class="col s12">
+                  <div class="hmph">
+                     <img class="slider-img responsive-img z-depth-1" src="https://s-media-cache-ak0.pinimg.com/originals/c7/85/6c/c7856c99bb69561e1b9b49d4999860d8.jpg">
+                  </div>
+               </div>
+            </div>
+            <div id="2" class="l2 slider-image valign-wrapper center-align row">
+               <div class="col s12">
+                  <div class="hmph">
+                     <img class="slider-img responsive-img z-depth-1" src="https://ak.picdn.net/assets/cms/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg">
+                  </div>
+               </div>
+            </div>
+            <div id="3" class="l3 slider-image valign-wrapper center-align row">
+               <div class="col s12">
+                  <div class="hmph">
+                     <img class="slider-img responsive-img z-depth-1" src="https://ak.picdn.net/assets/cms/71663cb9a048668b680962f2ac5cc5753364e9f2-stock-vector-glitch-abstract-background-with-distortion-effect-random-horizontal-orange-and-green-color-lines-552670291.jpg">
+                  </div>
+               </div>
+            </div>
+            <div id="4" class="l4 slider-image valign-wrapper center-align row">
+               <div class="col s12">
+                  <div class="hmph">
+                     <img class="slider-img responsive-img z-depth-1" src="http://skyrocketradio.com/wp-content/uploads/2016/05/death_to_stock_photo_chicago_vhbvhb.jpg">
+                  </div>
+               </div>
+            </div>
+            <div id="5" class="l5 slider-image valign-wrapper center-align row">
+               <div class="col s12">
+                  <div class="hmph">
+                     <img class="slider-img responsive-img z-depth-1" src="https://www.ethos3.com/wp-content/uploads/2015/12/free-stock-photo1.jpg">
+                  </div>
+               </div>
+            </div>
+            <ul class="pagination center">
+               <li onclick="incr(-1)" class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+               <li onclick="curr(1)" class="img-num waves-effect"><a href="#!">1</a></li>
+               <li onclick="curr(2)" class="img-num waves-effect"><a href="#!">2</a></li>
+               <li onclick="curr(3)" class="img-num waves-effect"><a href="#!">3</a></li>
+               <li onclick="curr(4)" class="img-num waves-effect"><a href="#!">4</a></li>
+               <li onclick="curr(5)" class="img-num waves-effect"><a href="#!">5</a></li>
+               <li onclick="incr(1)" class="img-num waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+      </div>
+   </div>
+   </div>
+   <div class="section gi-sec" id="index-banner">
+      <div class="gi-header">
+         <h4 class="header center white-text">Programs</h4>
+      </div>
+      <div class="row">
+  <div class="col s4">
+   <div class="card profile-card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="http://www.realtimearts.net/data/images/art/46/4640_profile_nilssonpolias.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Marco Gomez<i class="material-icons right">more_vert</i></span>
+        <p class="header-sub muli">Creative Director</p>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Marco Gomez<i class="material-icons right">close</i></span>
+        <p>I like to eat and to work. Preferably both at the same time.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col s4">
+   <div class="card profile-card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="http://www.realtimearts.net/data/images/art/46/4640_profile_nilssonpolias.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Marco Gomez<i class="material-icons right">more_vert</i></span>
+        <p class="header-sub muli">Creative Director</p>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Marco Gomez<i class="material-icons right">close</i></span>
+        <p>I like to eat and to work. Preferably both at the same time.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col s4">
+   <div class="card profile-card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="http://www.realtimearts.net/data/images/art/46/4640_profile_nilssonpolias.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Marco Gomez<i class="material-icons right">more_vert</i></span>
+        <p class="header-sub muli">Members</p>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Marco Gomez<i class="material-icons right">close</i></span>
+        <p>I like to eat and to work. Preferably both at the same time.</p>
+      </div>
+    </div>
+  </div>
+</div> 
+   </div>
+   <div class="section" id="index-banner">
+      <div class="gi-header">
+         <h4 class="header center white-text">Job Board</h4>
+         <div class="col s12 m7 spacing">
+            <p class="white-text center">Here's some of our events, we'd love to see you there!</p>
+         </div>
+      </div>
+      <div class="container">
+        <div class="job-card">
+           <div class="item card-left">
+              <img class="job-loc-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empire_State_Building_%28HDR%29.jpg/150px-Empire_State_Building_%28HDR%29.jpg">
+           </div>
+           <div class="item card-right">
+              <h3 class="header-mini">Analyst</h3>
+              <h3 class="header-sub muli">Caribbean</h3>
+              <!-- <h3 class="header-loc">Caribbean</h3> -->
+              <div class="job-desc muli"><p>They key is to have every key, the key to open every door. You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. Life is what you make it, so let’s make it. Special cloth alert. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started.</p></div>
+              <a class="waves-effect waves-light light-blue-text accent-2  hero-learn" href="/next-gen/community/job-board/analyst"><i class="material-icons r-program right">add</i>learn more</a>
+           </div>
+        </div>
+      </div>
+  </div>
+</div>
+{% endblock %}

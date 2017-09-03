@@ -4,7 +4,7 @@
 
 <main>
 <div class="container page-container">
-  <h3 class="page-header white-text">Project Showcase</h3>
+  <h3 class="page-header white-text">Job Board</h3>
   <div class="container">
   <div class="section">
   </div>
@@ -17,7 +17,8 @@
            </div>
            <div class="item card-right">
               <h3 class="header-mini">{{ job.title }}</h3>
-              <h3 class="header-loc">{{ job.header.location }}</h3>
+              <h3 class="header-sub muli">{{ job.header.location }}</h3>
+              <!-- <h3 class="header-loc">{{ job.header.location }}</h3> -->
               <div class="job-desc muli">{{ job.content }}</div>
               <a class="waves-effect waves-light light-blue-text accent-2  hero-learn" href="{{ job.url }}"><i class="material-icons r-program right">add</i>learn more</a>
            </div>
