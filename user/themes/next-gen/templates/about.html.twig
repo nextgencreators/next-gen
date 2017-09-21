@@ -1,0 +1,166 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+<br>
+<br>
+<div class="section no-pad-bot" id="index-banner">
+<div class="container">
+   <!--    <div class="container-inner"> -->
+   <h3 class="page-header white-text">About Next Gen</h3>
+   <div class="section"></div>
+   <div class="section">
+   <div class="row">
+         <div class="col s12 m7">
+         <p class="white-text muli">Next Gen Creators is a nonprofit organization started in 2015 to help provide a platform from aspiring and existing developers in the Caribbean to showcase their skills and create solutions to the world’s biggest problems.</p>
+         <p class="white-text muli">The organization eventually evolved to help young entrepreneurs and techies across the Caribbean and Latin America to innovate, collaborate and learn through a series of specially curated events and programs.</p>
+         <p class="white-text muli">Next Gen Creators is the organizer of Coders Of The Caribbean, Converge Summit and pitch partners for the Diamond Challenge in Jamaica. </p>
+      </div>
+         <div class="col s12 m5">
+             <img class="responsive-img" src="{{ url('theme://images/about_header.JPG') }}">
+         </div>
+      </div>
+
+   </div>
+   <div class="section">
+   <div class="row">
+      <h5 class="header center subtext white-text">How We Work</h5>
+      <div class="row">
+         <div class="col s12 m4">
+            <div class="icon-block">
+               <h2 class="center light-blue-text"><i class="approach-icon material-icons">flash_on</i></h2>
+               <h5 class="white-text center">Entrepreneurship</h5>
+               <p class="white-text muli light">Considering the limitations that exists in the Caribbean’s start-up ecosystem our organization serves as a ‘feeder’ of entrepreneurial and tech talent into the space.</p>
+            </div>
+         </div>
+         <div class="col s12 m4">
+            <div class="icon-block">
+               <h2 class="center light-blue-text"><i class="approach-icon material-icons">group</i></h2>
+               <h5 class="white-text center">Immersion</h5>
+               <p class="white-text muli light">Through our curated workshops, seminars, hackathons and conferences we inspire young entrepreneurs and developers to explore their skills and become full-time talents. Our team also works to introduce youth to coding.</p>
+            </div>
+         </div>
+         <div class="col s12 m4">
+            <div class="icon-block">
+               <h2 class="center light-blue-text"><i class="approach-icon material-icons">settings</i></h2>
+               <h5 class="white-text center">Learn</h5>
+               <p class="white-text muli light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+ </div>
+ <div class="section">
+<div class="s abt-fun">
+      <h5 class="header center subtext white-text">Fund Allocation</h5>
+      <div class="section">
+      </div>
+      <div class="row">
+        <div class="col s8 push-s2 pull-s2">
+      <canvas id="bar-chart-grouped" ></canvas>
+    </div>
+    </div>
+     <div class="row">
+        <div class="col s10 push-s1 pull-s1">
+           <p class="white-text muli">Next Gen Creators is funded by generous donations from sponsors and our partners. 100% of all funds raised by the organization is used for project implementation.</p>
+          <p class="white-text muli">If you’d like to help our organization to inspire the next generation, Kindly consider donating to Next Gen Creators (our contact our team for more info).</p>
+        </div>
+      </div>
+   </div>
+ </div>
+   <!-- adfasdf -->
+    <h5 class="header center subtext white-text">Outreach</h5>
+   <div class="row valign-wrapper">
+    <div class="col s2 right-align">
+<li onclick="incr(-1)" class="waves-effect"><a href="#!"><i class="arrow-big material-icons">chevron_left</i></a></li>
+    </div>
+     <div class="col s8">
+       <div class="section"></div>
+        <div id="1" class="l1 slider-image valign-wrapper center-align row">
+           <div class="col s12">
+              <div class="hmph">
+                 <img class="slider-img responsive-img z-depth-1" src="{{ url('theme://images/outreach_pic1.JPG') }}">
+              </div>
+           </div>
+        </div>
+        <div id="2" class="l2 slider-image valign-wrapper center-align row">
+           <div class="col s12">
+              <div class="hmph">
+                 <img class="slider-img responsive-img z-depth-1" src="{{ url('theme://images/outreach_pic2.JPG') }}">
+              </div>
+           </div>
+        </div>
+        <div id="3" class="l3 slider-image valign-wrapper center-align row">
+           <div class="col s12">
+              <div class="hmph">
+                 <img class="slider-img responsive-img z-depth-1" src="{{ url('theme://images/outreach_pic3.JPG') }}">
+              </div>
+           </div>
+        </div>
+        <div id="4" class="l4 slider-image valign-wrapper center-align row">
+           <div class="col s12">
+              <div class="hmph">
+                 <img class="slider-img responsive-img z-depth-1" src="{{ url('theme://images/outreach_pic5.JPG') }}">
+              </div>
+           </div>
+        </div>
+        <div id="5" class="l5 slider-image valign-wrapper center-align row">
+           <div class="col s12">
+              <div class="hmph">
+                 <img class="slider-img responsive-img z-depth-1" src="{{ url('theme://images/outreach_pic6.JPG') }}">
+              </div>
+           </div>
+        </div>
+        <div id="6" class="l6 slider-image valign-wrapper center-align row">
+           <div class="col s12">
+              <div class="hmph">
+                 <img class="slider-img responsive-img z-depth-1" src="{{ url('theme://images/outreach_pic7.JPG') }}">
+              </div>
+           </div>
+        </div>
+     
+        <ul class="pagination center">
+           <li onclick="curr(1)" class="img-num waves-effect"><a href="#!">1</a></li>
+           <li onclick="curr(2)" class="img-num waves-effect"><a href="#!">2</a></li>
+           <li onclick="curr(3)" class="img-num waves-effect"><a href="#!">3</a></li>
+           <li onclick="curr(4)" class="img-num waves-effect"><a href="#!">4</a></li>
+           <li onclick="curr(5)" class="img-num waves-effect"><a href="#!">5</a></li>
+           <li onclick="curr(6)" class="img-num waves-effect"><a href="#!">6</a></li>
+        </ul>
+       
+     </div>
+     <div class="col s2 left-align">
+ <li onclick="incr(1)" class="img-num waves-effect"><a href="#!"><i class="arrow-big material-icons">chevron_right</i></a></li>
+    </div>
+   </div>
+   <!-- adf -->
+   
+   <div class="s abt-faq white-text">
+      <h5 class="header center subtext white-text">FAQs</h5>
+      <div class="section">
+      </div>
+      <div class="row">
+      <div class="col s10 push-s1 pull-s1">
+      <ul class="collapsible" data-collapsible="accordion">
+         <li class="">
+            <div class="collapsible-header"><i class="arrow material-icons">keyboard_arrow_right</i>How can I get involved with Next Gen Creators?</div>
+            <div class="collapsible-body"><span class="muli">It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? We don’t see them, we will never see them. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Every chance I get, I water the plants, Lion!</span></div>
+         </li>
+         <li class="">
+            <div class="collapsible-header"><i class="arrow material-icons">keyboard_arrow_right</i>How old to I have to be to participate in most Next Gen programs?</div>
+            <div class="collapsible-body"><span class="muli">They key is to have every key, the key to open every door. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key.</span></div>
+         </li>
+         <li>
+            <div class="collapsible-header"><i class="arrow material-icons">keyboard_arrow_right</i>Is Next Gen Creators a registered nonprofit organization?</div>
+            <div class="collapsible-body"><span class="muli">Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. They will try to close the door on you, just open it. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Hammock talk come soon.</span></div>
+         </li>
+         <li>
+            <div class="collapsible-header"><i class="arrow material-icons">keyboard_arrow_right</i>Where can I contact the Next Gen Creators?</div>
+            <div class="collapsible-body"><span class="muli">Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. They will try to close the door on you, just open it. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Hammock talk come soon.</span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+   </div>
+</div>
+{% endblock %}

@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400');
-@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800');
 
 $top-bg: rgb(46,52,63);
 $center-bg: rgb(58,65,79);
@@ -232,14 +230,18 @@ $bright-blue: #40c4ff;
   margin: 0 auto;
 /*  width: 15em !important;*/
 }
+#fund-graph {
+  width: 50% !important;
+  height: 18em !important;
+}
 .profile-card {
-  width: 14em;
+  /*width: 14em;*/
   margin: 0 auto;
 }
 .profile-card {
   .card-content .card-title {
     margin: 0;
-    line-height: 1;
+    line-height: 1.2;
   }
   .card-content {
     padding: 15px 24px;
@@ -296,6 +298,17 @@ blockquote {
   padding-left: 10%;
 }
 
+.mantra-text {
+  margin-bottom: 0;
+}
+.team-about-text {
+  font-size: 0.8rem;
+}
+.team-about-quote {
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-top: 0.4rem !important;
+}
 .card-title {
   font-weight: 400 !important;
 }
@@ -377,6 +390,13 @@ main {
 nav {
   background-color: $top-bg !important;
 }
+nav ul.sub-nav {
+    display: none;
+}
+
+#nav ul.visible {
+    display: block;
+}
 /*.nav-wrapper {
   padding: 2em !important;
 }*/
@@ -384,17 +404,32 @@ nav {
 /*dropdown styles*/
 ul li ul.dropdown{
   min-width: 100%;
-  display: none;
   position: relative;
+   opacity:0;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+  /*background-color: rgba(92, 91, 87, 0.9);*/
+      -webkit-transition: all .30s ease-out 0.55s;
+    -moz-transition: all .30s ease-out 0.3s;
+    -o-transition: all .30s ease-out 2s;
+    -ms-transition: all .30s ease-out 2s;
+    transition: all .30s ease-out 0.33s;
 }
 ul li:hover ul.dropdown{
-  display: block;
+  opacity: 1;
+  height: 100%;
 }
 ul li ul.dropdown li{
   display: block;
+
+}
+nav ul a {
+  color: #a6a6a6 !important;
 }
 nav ul a:hover {
   background-color: rgba(0, 0, 0, 0) !important;
+  color: white !important;
 }
 
 /*navnavnanvanvnav*/
@@ -814,10 +849,8 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
   background-color: $top-bg !important;
 }
 .card {
-  border-top: 1.5px solid $blue-border;
+  border-top: 2.5px solid $blue-border;
 }
-
-
 
 .gb li::before {
     content: "\2022";
@@ -1035,6 +1068,11 @@ input:not([type=checkbox]):not(.browser-default):focus:not([readonly]) + label {
   color: #aeea00;
 }
 
+.arrow-big {
+  color: #aeea00;
+  font-size: 4rem !important;
+}
+
 .collapsible-header {
   background-color: $center-bg !important;
   border-top: 1px solid #40c4ff !important;
@@ -1111,7 +1149,7 @@ input:checked + label {
   }
 }
 input ~ nav {
-  font-family: 'Lato', sans-serif !important;
+  font-family: $muli, sans-serif !important;
   background-color: $top-bg;
   box-shadow: 0 2.65px 1.5px -1.5px #171a1f;
   overflow: hidden;
@@ -1139,8 +1177,8 @@ input ~ nav {
       > a {
         text-decoration: none;
         color: #a6a6a6;
-        font-weight: 700;
-        letter-spacing: 3px;
+        font-weight: 800;
+        letter-spacing: 2px;
         display: inline;
       }
       > a:hover {
@@ -1166,9 +1204,24 @@ input:checked ~ nav {
 #top-nav nav ul li {
   float: none !important;
 }
-
 [type="checkbox"] + label:before, [type="checkbox"]:not(.filled-in) + label:after {
   border: 2px solid #40c4ff;
+}
+#top-nav [type="checkbox"].filled-in:not(:checked) + label:after {
+  border: none;
+}
+
+#top-nav [type="checkbox"]:checked + label:before
+{
+  border-right: 2px solid transparent !important;
+  border-bottom: 2px solid transparent !important;
+}
+
+#top-nav [type="checkbox"].filled-in:checked + label:after {
+  background-color: #26a69a;
+  border: 2px solid #26a69a;
+  width: 0;
+  height: 0;
 }
 
 .form-input-file input {

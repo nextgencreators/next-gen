@@ -1,8 +1,19 @@
 var jq321 = $.noConflict(true);
 
+
+// nav onclick 
+
+
+(function($) {
+  $(document).ready(function() {
+    $('.parent-link').click(function() {
+      $('.sub-nav').toggleClass('visible');
+    });
+  });
+}(jq321));
+
+
 // form change checkbox type
-
-
 (function($) {
   $(document).ready(function() {
   $(":checkbox").addClass("filled-in");
@@ -82,6 +93,7 @@ function showDiv(n) {
       ]
     },
     options: {
+      responsive: true,
       title: {
         display: true,
         text: 'Population growth (millions)',

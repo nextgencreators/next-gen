@@ -52,7 +52,9 @@ html {
     display: none; }
   .calendar-container .controls {
     text-align: center;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    padding: 27px 5px 0 5px;
+  }
     .calendar-container .controls .month-title {
       text-transform: uppercase;
       font-family: 'Lato';

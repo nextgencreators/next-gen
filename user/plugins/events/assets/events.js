@@ -48,7 +48,9 @@
               }
           });
       });
-    
+      $('.calendar-button').on('click', function(event) {
+        location.reload();
+      });
       $('.calendar-close-modal').on('click', function(event) {
         $('.calendar-modal').fadeOut(100);
         event.preventDefault();
