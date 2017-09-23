@@ -17,10 +17,10 @@ html {
   text-align: right;
   width: 100%; }
   .calendar-legend li {
-    display: inline-block;
+    display: inline;
     margin-left: 0.5rem; }
     .calendar-legend li span.color {
-      display: inline-block;
+      /*display: inline-block;*/
       width: 1.75rem;
       font-size: 0.75rem;
       line-height: 1.75rem;
@@ -28,7 +28,7 @@ html {
       text-align: center; }
     .calendar-legend li span.key {
       font-family: 'Lato';
-      display: inline-block;
+      /*display: inline-block;*/
       line-height: 1.5rem;
       font-size: .75rem;
       color: #cecece; }
@@ -229,6 +229,37 @@ html {
     border: 2px solid #1BB3E9;
     background: #1BB3E9; }
 
+.view-more-display {
+  display: inline-block !important;
+}
+
+.no-events-display {
+  display: block !important;
+  margin: 0;
+}
+#no-events {
+  display: none;
+  color: #cecece;
+}
+.yes-events {
+  display: none;
+}
+#event-title {
+  display: inline-block;
+}
+.time-info-right {
+  display: inline-block;
+  float: right;
+}
+.day-info-right {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0;
+}
+.time-info-bottom {
+  color: #40c4ff;
+  font-weight: 300;
+}
 /* html5 .events-container element */
 .events-container {
   max-width: 1200px;

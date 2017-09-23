@@ -38,15 +38,23 @@
         return false;
       });
       $(window).load(function() {
+          var month_event = false;
           $('*').each(function() {
               if ($(this).hasClass('events-list')) {
-                if( !$.trim( $(this).html() ).length ) {
+                if(!$.trim($(this).html()).length) {
                     $(this).css('background', 'rgb(46,52,63)');
                 } else {
                     $(this).css('background', 'rgb(170,178,188)');
+                    month_event = true;
                 }
               }
           });
+          if (!month_event) {
+            $('#no-events').addClass('no-events-display')
+          } else {
+            $('.yes-events').addClass('view-more-display')
+          }
+
       });
       $('.calendar-button').on('click', function(event) {
         location.reload();
