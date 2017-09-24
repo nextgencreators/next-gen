@@ -654,13 +654,13 @@ nav ul a:hover {
 .r-program {
   margin-right: 2.7em;
 }
-.home-sub-green {
-  color: $green;
+.home-sub-mini {
+ /* color: $green;*/
   font-size: 1.5rem;
-  font-weight:400;
+  font-weight: 400;
   text-align: center;
-  position: absolute;
-  margin-left: 2.5em;
+ /* position: absolute;
+  margin-left: 2.5em;*/
 }
 
 .hero-learn {
@@ -738,21 +738,6 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
   }
 }
 
-.ch-img-1 {
-  background-image: url("https://s-media-cache-ak0.pinimg.com/236x/a5/eb/3a/a5eb3a67262b715bd938bb798ff21a9b--wood-planters-succulent-planters.jpg");
-  background-size: cover;
-}
-
-.ch-img-2 {
-  background-image: url("https://s-media-cache-ak0.pinimg.com/236x/a5/eb/3a/a5eb3a67262b715bd938bb798ff21a9b--wood-planters-succulent-planters.jpg");
-  background-size: cover;
-}
-
-.ch-img-3 {
-  background-image: url("https://s-media-cache-ak0.pinimg.com/236x/a5/eb/3a/a5eb3a67262b715bd938bb798ff21a9b--wood-planters-succulent-planters.jpg");
-  background-size: cover;
-}
-
 .ch-item {
   width: 100%;
   height: 100%;
@@ -760,10 +745,12 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
   overflow: hidden;
   position: relative;
   cursor: default;
+  background-size: cover;
+  background-position: center;
   box-shadow:
-    inset 0 0 0 16px rgba(255,255,255,0.6),
+    inset 0 0 0 4.5px rgba(255,255,255,0.6),
     0 1px 2px rgba(0,0,0,0.1);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .ch-info {
   position: absolute;
@@ -799,14 +786,17 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
   transition: all 1s ease-in-out 0.15s;
 }
 .ch-info p a {
-  display: block;
-  color: rgba(255,255,255,0.7);
+  display: inline-block;
+  color: rgb(255,255,255);
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 9px;
+  font-size: 1em;
   letter-spacing: 1px;
   padding-top: 4px;
+}
+.c-info p i {
+  display: inline-block;
 }
 .ch-info p a:hover {
   color: rgba(255,242,34, 0.8);
