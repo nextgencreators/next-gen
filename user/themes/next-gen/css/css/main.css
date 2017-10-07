@@ -56,6 +56,9 @@
 .img-header {
   width: 100%; }
 
+.zero-line-height {
+  line-height: 0; }
+
 .programs .row {
   margin-bottom: 5em; }
 
@@ -696,7 +699,8 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
   display: inline-block;
   width: 1em;
   margin-left: -1em;
-  font-size: 15px; }
+  font-size: 15px;
+  padding-bottom: 0.35rem; }
 
 .gb {
   list-style: none; }
