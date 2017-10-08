@@ -1,5 +1,8 @@
 ---
 title: birthday
+taxonomy:
+    category:
+        - featured
 event:
     start: '29-07-2017 22:17'
     end: '29-07-2017 23:17'

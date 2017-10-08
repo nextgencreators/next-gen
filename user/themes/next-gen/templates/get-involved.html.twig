@@ -9,10 +9,6 @@
         'category': 'featured'
       }
     },
-    'dateRange': {
-      'start': datetools.today|date('m/d/Y'),
-      'end': datetools.parseDate('+1 month')|date('m/d/Y')
-    },
     'order': {
       'by': 'date',
       'dir': 'asc'
@@ -20,107 +16,137 @@
     'limit': 3
   })
 %}
-
 {% block content %}
+
+{#
+     <section class="featured-events">
+
+      {% for event in featured_events %}
+
+        <article class="featured-event">
+          <div class="featured-event-masthead">
+       
+            <h3 class="featured-event-title"><a href="{{ event.url }}">{{ event.title }}</a></h3>
+          </div>
+
+          <div class="featured-event-content">
+            <ul class="event-meta-information">
+              <li class="when"><i class="fa fa-calendar"></i> {{ event.header.event.start|date(J, d) }}</li>
+              {% if event.header.event.location %}
+                <li class="where"><i class="fa fa-location-arrow"></i> {{ event.header.event.location }}</li>
+              {% endif %}
+            </ul>
+
+            {{ event.summary(200) }}
+
+            <p>
+              <a href="{{ event.url }}" class="event-button" />{{ 'PLUGIN_EVENTS.EVENTS.BUTTON'|t }}</a>
+            </p>
+
+          </div>
+        </article>
+      {% endfor %}
+
+    </section> 
+#}
+
 <div class="container page-container">
 <h3 class="page-header white-text">Get Involved</h3>
   <div class="section gi-sec" id="index-banner">
     <div class="gi-header">
-      <h4 class="header center white-text">Events</h4>
+      <h4 class="header center white-text">Featured Events</h4>
       <div class="container">
         <div class="col s12 m7 spacing">
           <p class="white-text center">We have some exciting events coming up and we'd love to meet you there!</p>
         </div>
         <div class="row center-align">
-          <div class="col s4">
-            <div class="gi-proj-card card">
+  {% for event in featured_events %}
+<div class="col s4">
+  <div class="gi-proj-card card">
               <div class="card-content white-text">
-                <span class="center card-upper card-title">august</span>
-                <h1 class="center date">23</h1>
-                <span class="center card-upper card-title">friday</span>
-                <span class="center card-lower card-title">Hackathon</span>
+                <span class="center card-upper card-title">{{ event.header.event.start|date("M") }}</span>
+                <h1 class="center date">{{ event.header.event.start|date("d") }}</h1>
+                <span class="center card-upper card-title">{{ event.header.event.start|date("l") }}</span>
+                <a href="{{ event.url }}" class="center card-lower card-title">{{ event.title }}</a>
               </div>
             </div>
-          </div>
-          <div class="col s4">
-            <div class="gi-proj-card card">
-              <div class="card-content white-text">
-                <span class="center card-upper card-title">august</span>
-                <h1 class="center date">23</h1>
-                <span class="center card-upper card-title">friday</span>
-                <span class="center card-lower card-title">Hackathon</span>
-              </div>
-            </div>
-          </div>
-          <div class="col s4">
-            <div class="gi-proj-card card">
-              <div class="card-content white-text">
-                <span class="center card-upper card-title">august</span>
-                <h1 class="center date">23</h1>
-                <span class="center card-upper card-title">friday</span>
-                <span class="center card-lower card-title">Hackathon</span>
-              </div>
-            </div>
-          </div>
-        </div>
+</div>
+  {% endfor %}
+</div>
         <div class="gi-sec-link">
-          <a href="#" class="white-text">See all Events<i class="fa fa-lg fa-angle-double-right" aria-hidden="true"></i></a>
+          <a href="{{ base_url }}/community/events-list" class="white-text">See all Events<i class="fa fa-lg fa-angle-double-right" aria-hidden="true"></i></a>
         </div>
 
       </div>
     </div>
   </div>
-  <div class="section gi-sec" id="index-banner">
-    <div class="container">
-      <div class="gi-header">
-        <h4 class="header center white-text">Projects</h4>
-        <div class="col s12 m7 spacing">
-          <p class="white-text center">Here's what we're working on!</p>
-        </div>
-      </div>
-        <div class="col s12 m7 spacing">
-          <div class="event-card">
-            <div class="item card-left">
-              <img class="job-loc-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empire_State_Building_%28HDR%29.jpg/150px-Empire_State_Building_%28HDR%29.jpg" >
-            </div>
-            <div class="item card-right">
-              <h3 class="header-mini">Software Engineer</h3>
-              <h3 class="header-sub muli">Google Inc.</h3>
-              <p class="job-desc muli">Lorem Khaled Ipsum is a major key to success. You do know, you do know that they don’t want you to have lunch. I’m keeping it real with you, so what you going do is have lunch. They don’t want us to win. The key to more success is to have a lot of pillows.
-              </p>
-              <div class="bottom-text">
-                <h3 class="header-loc">Mountain View, California</h3>
-                <a class="waves-effect waves-light light-blue-text accent-2  hero-learn"><i class="material-icons right">add</i>learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      <div class="col s12 m7 spacing">
-        <div class="event-card">
-          <div class="item card-left">
-            <img class="job-loc-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empire_State_Building_%28HDR%29.jpg/150px-Empire_State_Building_%28HDR%29.jpg" >
-          </div>
-          <div class="item card-right">
-            <h3 class="header-mini">Software Engineer</h3>
-            <h3 class="header-sub muli">Google Inc.</h3>
-            <p class="job-desc muli">Lorem Khaled Ipsum is a major key to success. You do know, you do know that they don’t want you to have lunch. I’m keeping it real with you, so what you going do is have lunch. They don’t want us to win. The key to more success is to have a lot of pillows.
-            </p>
-            <div class="bottom-text">
-              <h3 class="header-loc">Mountain View, California</h3>
-              <a class="waves-effect waves-light light-blue-text accent-2  hero-learn"><i class="material-icons right">add</i>learn more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gi-sec-link">
-        <a href="#" class="white-text">See all Projects<i class="fa fa-lg fa-angle-double-right" aria-hidden="true"></i></a>
-      </div>
-    </div>
-  </div>
+
   <div class="section gi-sec " id="index-banner">
     <div class="gi-header">
-      <h4 class="header center white-text">Programs</h4>
+      <h4 class="header center white-text">Other Ways to Get Involved</h4>
       <div class="container">
+        <!-- a;lskdjf -->
+        <form name="{{ form.name }}"
+      action="{{ action }}"
+      method="{{ method }}"{{ multipart }}
+      {% if form.id %}id="{{ form.id }}"{% endif %}
+      {% block form_classes %}
+      {% if form.classes %}class="{{ form.classes }}"{% endif %}
+      {% endblock %}
+>
+
+  {% block inner_markup_fields_start %}{% endblock %}
+
+  {% for field in form.fields %}
+    {% if field.type == 'file' %}
+        {% do assets.addJs('plugin://form/assets/form.min.js') %}
+    {% endif %}
+    {% set value = form.value(field.name) %}
+    {% include "forms/fields/#{field.type}/#{field.type}.html.twig" ignore missing %}
+  {% endfor %}
+
+  {% include "forms/fields/formname/formname.html.twig" %}
+
+  {% block inner_markup_fields_end %}{% endblock %}
+
+  {% block inner_markup_buttons_start %}
+  <div class="buttons">
+  {% endblock %}
+
+  {% for button in form.buttons %}
+      {% if button.outerclasses is defined %}<div class="{{ button.outerclasses }}">{% endif %}
+          {% if button.url %}
+              <a href="{{ button.url starts with 'http' ? button.url : url(button.url) }}">
+          {% endif %}
+          <button
+                {% if button.id %}id="{{ button.id }}"{% endif %}
+                {% block button_classes %}
+                class="{{ button.classes|default('button') }}"
+                {% endblock %}
+                {% if button.disabled %}disabled="disabled"{% endif %}
+
+                type="{{ button.type|default('submit') }}"
+
+                {% if button.task %}
+                    name="task" value="{{ button.task }}"
+                {% endif %}
+            >
+                {{ button.value|t|default('Submit') }}
+          </button>
+          {% if button.url %}
+              </a>
+          {% endif %}
+      {% if button.outerclasses is defined %}</div>{% endif %}
+  {% endfor %}
+
+  {% block inner_markup_buttons_end %}
+  </div>
+  {% endblock %}
+
+  {{ nonce_field('form', 'form-nonce')|raw }}
+</form>
+
+        <!-- as;dkflk -->
         <div class="col s12 m7 spacing">
           <p class="white-text center"> I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there.</p>
         </div>

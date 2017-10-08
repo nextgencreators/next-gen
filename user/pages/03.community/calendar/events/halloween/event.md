@@ -1,5 +1,8 @@
 ---
 title: halloween!
+taxonomy:
+    category:
+        - featured
 event:
     start: '31-10-2017 19:20'
     end: '31-10-2017 19:20'
