@@ -30,34 +30,31 @@
         }
       },
       'dateRange': {
-        'start': datetools.today|date('m/d/Y'),
-        'end': datetools.parseDate('+1 month')|date('m/d/Y')
+        'start': datetools.today|date('m/d/Y')
       },
       'order': {
         'by': 'date',
         'dir': 'asc'
       },
-      'limit': 10,
       'pagination': true
     })
 %}
 
 {% block content %}
-
+<div class="container page-container">
   <div class="events-container">
 
-    <header>
-      <h1 class="center">{{ page.title }}</h1>
-    </header>
+    <h3 class="page-header white-text">Events List</h3>
+    <div class="section">
+    </div>
 
-    <section class="featured-events">
+<!--     {# <section class="featured-events">
+
       {% for event in featured_events %}
+
         <article class="featured-event">
           <div class="featured-event-masthead">
-            {% set image = event.media.images|first %}
-            {% if image != null %}
-              {{ image.cropZoom(1200,500).html }}
-            {% endif %}
+       
             <h3 class="featured-event-title"><a href="{{ event.url }}">{{ event.title }}</a></h3>
           </div>
 
@@ -80,37 +77,31 @@
         </article>
       {% endfor %}
 
-    </section>
+    </section> #} -->
 
+<div class="row">
+  <div class="col s10 push-s1 pull-s1">
     <section class="events-listing">
       {% for item in events %}
-
         <article class="event-item">
 
-          <div class="event-image">
-            {% set image = item.media.images|first %}
-    				{% if image != null %}
-    					<a href="{{ item.url }}">{{ image.cropZoom(512,512).html }}</a>
-            {% else %}
-            &nbsp;
-    				{% endif %}
-          </div>
+        
 
           <section class="event-content">
 
-            <h3>{{ item.title }}</h3>
+            <h4 class="white-text">{{ item.title }}</h4>
 
             <div class="event-meta">
               <ul>
-                <li class="when"><i class="fa fa-calendar"></i> {{ item.header.event.start|date(J, d) }}</li>
+                <li class="white-text when"><i class="blue-text text-lighten-1 fa fa-calendar"></i> {{ item.header.event.start|date(J, d) }}</li>
                 {% if item.header.event.location %}
-                  <li class="where"><i class="fa fa-location-arrow"></i> {{ item.header.event.location }}</li>
+                  <li class="white-text where"><i class="blue-text text-lighten-1 fa fa-location-arrow"></i> {{ item.header.event.location }}</li>
                 {% endif %}
               </ul>
               <a href="{{ item.url }}" class="event-button">{{ 'PLUGIN_EVENTS.EVENTS.BUTTON'|t }}</a>
             </div>
 
-            <div class="event-summary">
+            <div class="muli white-text event-summary">
               {{ item.summary(250) }}
             </div>
 
@@ -118,8 +109,10 @@
         </article>
       {% endfor %}
     </section>
+  </div>
 	</div>
-
+</div>
+</div>
   {# Render the pagination list #}
   {% if config.plugins.pagination.enabled and events.params.pagination %}
       {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}

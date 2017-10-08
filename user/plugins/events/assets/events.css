@@ -313,7 +313,8 @@ html {
     .events-container .events-listing .event-item {
       display: block;
       border-bottom: 1px solid #efefef;
-      padding: 1rem 0; }
+      /*padding: 1rem 0;*/
+      padding: 1rem 0 2rem 0; }
       .events-container .events-listing .event-item::after {
         clear: both;
         content: "";
@@ -335,7 +336,7 @@ html {
         float: left;
         display: block;
         margin-right: 5.85151%;
-        width: 78.8297%;
+        /*width: 78.8297%;*/
         display: block; }
         .events-container .events-listing .event-item .event-content:last-child {
           margin-right: 0; }
