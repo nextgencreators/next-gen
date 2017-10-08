@@ -1,26 +1,5 @@
 {% embed 'partials/base.html.twig' %}
 
-{# get the featured events #}
-{% set featured_events =
-  page.collection({
-    'items': {
-      '@taxonomy': {
-        'type': 'event',
-        'category': 'featured'
-      }
-    },
-    'dateRange': {
-      'start': datetools.today|date('m/d/Y'),
-      'end': datetools.parseDate('+1 month')|date('m/d/Y')
-    },
-    'order': {
-      'by': 'date',
-      'dir': 'asc'
-    },
-    'limit': 3
-  })
-%}
-
 {# get events by taxonomy #}
 {% set events =
     page.collection({
