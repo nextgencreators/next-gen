@@ -80,23 +80,32 @@
 #event-title {
   text-transform: uppercase !important; }
 
+.card-upper {
+  text-transform: uppercase; }
+
+.card-lower {
+  color: #8BDA48;
+  font-size: 1.3rem; }
+
 .gi-proj-card {
   background-color: #2e343f; }
   .gi-proj-card .card-upper, .gi-proj-card .card-lower {
     margin: 0 !important;
     padding: 0 !important;
     font-weight: 400; }
-  .gi-proj-card .card-upper {
-    text-transform: uppercase; }
-  .gi-proj-card .card-lower {
-    color: #8BDA48;
-    font-size: 1.3rem; }
-  .gi-proj-card h1 {
-    margin: 0 !important;
-    padding: 0 !important;
-    font-size: 5rem; }
   .gi-proj-card .date {
     padding-bottom: 0.2em !important; }
+
+.gi-proj-card h1, .calendar-event-card h1 {
+  padding: 0 !important;
+  font-size: 5rem; }
+
+.gi-proj-card h1 {
+  margin: 0 !important; }
+
+.calendar-event-card h1 {
+  margin-top: 0;
+  margin-bottom: 1rem; }
 
 .gi-sec-link .fa {
   color: #8BDA48;
@@ -117,11 +126,20 @@
 
 .job-card {
   min-height: 300px; }
+  .job-card .card-title {
+    display: block;
+    line-height: 32px;
+    font-size: 22px; }
 
 .event-card {
   min-height: 170px; }
   .event-card .header-loc {
     margin: 0 !important; }
+
+.calendar-event-card {
+  background-color: #2e343f; }
+  .calendar-event-card .card-title {
+    margin-bottom: 0 !important; }
 
 /*job*/
 .ng-card, .job-card, .event-card {
@@ -178,6 +196,12 @@
   color: white;
   font-size: 0.9em;
   line-height: 19px; }
+
+.event-desc, .event-desc p {
+  padding-top: 5px;
+  color: white;
+  font-size: 1rem;
+  /*  line-height: 19px;*/ }
 
 #quote {
   font-weight: 300;

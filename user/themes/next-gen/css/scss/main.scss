@@ -97,6 +97,13 @@ $bright-blue: #40c4ff;
 #event-title {
   text-transform: uppercase !important;
 }
+.card-upper {
+    text-transform: uppercase;
+}
+.card-lower {
+    color: $green;
+    font-size: 1.3rem;
+  }
 .gi-proj-card {
   background-color: $top-bg;
   .card-upper, .card-lower {
@@ -104,23 +111,23 @@ $bright-blue: #40c4ff;
     padding: 0 !important;
     font-weight: 400;
   }
-  .card-upper {
-    text-transform: uppercase;
-  }
-  .card-lower {
-    color: $green;
-    font-size: 1.3rem;
-  }
-  h1 {
-    margin: 0 !important;
-    padding: 0 !important;
-    font-size: 5rem;
-  }
   .date {
     padding-bottom: 0.2em !important;
   }
 }
 
+.gi-proj-card h1, .calendar-event-card h1 {
+  padding: 0 !important;
+  font-size: 5rem;
+}
+
+.gi-proj-card h1 {
+  margin: 0 !important;
+}
+.calendar-event-card h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 .gi-sec-link {
   .fa {
     color: $green;
@@ -148,6 +155,11 @@ $bright-blue: #40c4ff;
 .job-card {
   @extend .ng-card;
   min-height: 300px;
+  .card-title {
+    display: block;
+    line-height: 32px;
+    font-size: 22px;
+  }
 }
 
 .event-card {
@@ -155,6 +167,14 @@ $bright-blue: #40c4ff;
   min-height: 170px;
   .header-loc {
     margin: 0 !important;
+  }
+}
+
+
+.calendar-event-card {
+  background-color: $top-bg;
+  .card-title {
+    margin-bottom: 0 !important;
   }
 }
 
@@ -224,6 +244,13 @@ $bright-blue: #40c4ff;
   color: white;
   font-size: 0.9em;
   line-height: 19px;
+}
+
+.event-desc, .event-desc p {
+  padding-top: 5px;
+  color: white;
+  font-size: 1rem;
+/*  line-height: 19px;*/
 }
 
 #quote {
