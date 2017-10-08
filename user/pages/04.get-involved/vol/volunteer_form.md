@@ -42,6 +42,11 @@ form:
           classes: btn waves-effect waves-light
 
     process:
+        - save:
+            fileprefix: contact-
+            dateformat: Ymd-His-u
+            extension: txt
+            body: "{% include 'forms/data.txt.twig' %}"
         - message: Thank you for getting in touch!
         - display: thankyou
 ---

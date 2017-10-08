@@ -85,83 +85,23 @@
     <div class="gi-header">
       <h4 class="header center white-text">Other Ways to Get Involved</h4>
       <div class="container">
-        <!-- a;lskdjf -->
-        <form name="{{ form.name }}"
-      action="{{ action }}"
-      method="{{ method }}"{{ multipart }}
-      {% if form.id %}id="{{ form.id }}"{% endif %}
-      {% block form_classes %}
-      {% if form.classes %}class="{{ form.classes }}"{% endif %}
-      {% endblock %}
->
-
-  {% block inner_markup_fields_start %}{% endblock %}
-
-  {% for field in form.fields %}
-    {% if field.type == 'file' %}
-        {% do assets.addJs('plugin://form/assets/form.min.js') %}
-    {% endif %}
-    {% set value = form.value(field.name) %}
-    {% include "forms/fields/#{field.type}/#{field.type}.html.twig" ignore missing %}
-  {% endfor %}
-
-  {% include "forms/fields/formname/formname.html.twig" %}
-
-  {% block inner_markup_fields_end %}{% endblock %}
-
-  {% block inner_markup_buttons_start %}
-  <div class="buttons">
-  {% endblock %}
-
-  {% for button in form.buttons %}
-      {% if button.outerclasses is defined %}<div class="{{ button.outerclasses }}">{% endif %}
-          {% if button.url %}
-              <a href="{{ button.url starts with 'http' ? button.url : url(button.url) }}">
-          {% endif %}
-          <button
-                {% if button.id %}id="{{ button.id }}"{% endif %}
-                {% block button_classes %}
-                class="{{ button.classes|default('button') }}"
-                {% endblock %}
-                {% if button.disabled %}disabled="disabled"{% endif %}
-
-                type="{{ button.type|default('submit') }}"
-
-                {% if button.task %}
-                    name="task" value="{{ button.task }}"
-                {% endif %}
-            >
-                {{ button.value|t|default('Submit') }}
-          </button>
-          {% if button.url %}
-              </a>
-          {% endif %}
-      {% if button.outerclasses is defined %}</div>{% endif %}
-  {% endfor %}
-
-  {% block inner_markup_buttons_end %}
-  </div>
-  {% endblock %}
-
-  {{ nonce_field('form', 'form-nonce')|raw }}
-</form>
-
-        <!-- as;dkflk -->
         <div class="col s12 m7 spacing">
           <p class="white-text center"> I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there.</p>
         </div>
+        <div class="section">
+        </div>
         <ul class="collapsible" data-collapsible="accordion">
-          <li class="">
-            <div class="collapsible-header white-text"><i class="arrow material-icons">keyboard_arrow_right</i>Program Name</div>
-            <div class="collapsible-body white-text" style="display: none;"><span>It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? We don’t see them, we will never see them. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Every chance I get, I water the plants, Lion!</span></div>
-          </li>
-          <li class="">
-            <div class="collapsible-header white-text"><i class="arrow material-icons">keyboard_arrow_right</i>Program Name</div>
-            <div class="collapsible-body white-text" style="display: none;"><span>They key is to have every key, the key to open every door. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key.</span></div>
+          <li>
+            <div class="collapsible-header white-text"><i class="arrow material-icons">keyboard_arrow_right</i>Volunteer</div>
+            <div class="collapsible-body white-text muli" style="display: none;"><span>It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? We don’t see them, we will never see them. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Every chance I get, I water the plants, Lion!</span><br><a href="" style="text-decoration:underline;">Learn More</a></div>
           </li>
           <li>
-            <div class="collapsible-header white-text"><i class="arrow material-icons">keyboard_arrow_right</i>Program Name</div>
-            <div class="collapsible-body white-text"><span>Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. They will try to close the door on you, just open it. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Hammock talk come soon.</span></div>
+            <div class="collapsible-header white-text"><i class="arrow material-icons">keyboard_arrow_right</i>Join</div>
+            <div class="collapsible-body white-text muli" style="display: none;"><span>They key is to have every key, the key to open every door. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key.</span><br><a href="" style="text-decoration:underline;">Learn More</a></div>
+          </li>
+          <li>
+            <div class="collapsible-header white-text"><i class="arrow material-icons">keyboard_arrow_right</i>Subscribe</div>
+            <div class="collapsible-body white-text muli"><span>Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. They will try to close the door on you, just open it. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Hammock talk come soon.</span><br><a href="" style="text-decoration:underline;">Learn More</a></div>
           </li>
         </ul>
         <div class="gi-sec-link">
@@ -170,7 +110,20 @@
       </div>
     </div>
   </div>
+    <div class="section gi-sec " id="index-banner">
+    <div class="gi-header">
+      <h4 class="header center white-text">Subscribe for Updates!</h4>
+      <div class="section">
+      </div>
+      <div class="container">
+        {% include 'forms/form.html.twig' %}
+       8
+      </div>
+    </div>
+  </div>
 </div>
+
+
 
 
 {% endblock %}
