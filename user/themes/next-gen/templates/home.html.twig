@@ -1,3 +1,4 @@
+{% set programs = page.collection({'items':{'@page.children': '/about/programs'}, 'pagination': true, 'limit': 10, 'order': {'by': 'default', 'dir': 'asc'}}) %}
 {% extends 'partials/home_base.html.twig' %}
 {% block content %}
 <div class="hero">
@@ -22,8 +23,6 @@
 </div>
 <main>
    <div class="container">
-      <!-- asd -->
-      <!-- asdf -->
       <div class="section home-involved">
          <h5 class="white-text center home-sub">Get Involved</h5>
          <ul class="ch-grid">
@@ -100,67 +99,16 @@
       </div>
       <div class="section home-programs">
          <h5 class="white-text center home-sub">Our Programs</h5>
-         <div class="row valign-wrapper">
-            <div class="col s6">
-               <img class="right programs-img responsive-img" src="https://s3.amazonaws.com/StartupStockPhotos/uploads/20160503/5.jpg">
-            </div>
-            <div class="col s6">
-               <div class="two-right left">
-                  <h5 class="white-text">Hackathons</h5>
-                  <p class="white-text">In life there will be road blocks but we will over come it. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. To succeed you must believe. When you believe, you will succeed. Cloth talk. </p>
-                  <a class="waves-effect waves-light light-blue-text accent-2  hero-learn"><i class="material-icons right">add</i>learn more</a>
-               </div>
-            </div>
-         </div>
-         <div class="row valign-wrapper">
-            <div class="col s6">
-               <div class="two-right right">
-                  <h5 class="white-text">Workshops</h5>
-                  <p class="white-text">The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears.</p>
-                  <a class="waves-effect waves-light light-blue-text accent-2  hero-learn"><i class="material-icons right">add</i>learn more</a>
-               </div>
-            </div>
-            <div class="col s6">
-               <img class="left programs-img responsive-img" src="http://startupship.org/wp-content/uploads/2015/02/59-e1423431288998-1000x600.jpg">
-            </div>
-         </div>
-         <div class="row valign-wrapper">
-            <div class="col s6">
-               <img class="right programs-img responsive-img" src="https://s3.amazonaws.com/StartupStockPhotos/20140808_StartupStockPhotos/53.jpg">
-            </div>
-            <div class="col s6">
-               <div class="two-right left">
-                  <h5 class="white-text">Community Events</h5>
-                  <p class="white-text">How’s business? Boomin. Bless up. They key is to have every key, the key to open every door. You smart, you loyal, you a genius. Hammock talk come soon. You smart, you loyal, you a genius. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started.</p>
-                  <a class="waves-effect waves-light light-blue-text accent-2  hero-learn"><i class="material-icons right">add</i>learn more</a>
-               </div>
-            </div>
-         </div>
+         {% include 'partials/program_list.html.twig' %} 
       </div>
       <div class="section home-contact">
          <h5 class="white-text center home-sub">Contact Us</h5>
          <p class="white-text">Email: info@nextgencreators.com</p>
          <p class="white-text">Cell-Phone: 876-451-3421</p>
          <div class="row center">
-            <div id="vf2" class="row container-inner-inner">
-               <div class="input-field col s12">
-                  <input id="name" type="text" class="validate">
-                  <label for="name">Full Name</label>
-               </div>
-               <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email" data-error="wrong" data-success="right">Email</label>
-               </div>
-               <div class="input-field col s12">
-                  <input id="subject" type="text" class="validate">
-                  <label for="subject">Subject</label>
-               </div>
-               <div class="input-field col s12">
-                  <textarea id="message" class="materialize-textarea"></textarea>
-                  <label for="message">Message</label>
-               </div>
+            <div class="col s12 l8 push-l2 pull-l2">
+               {% include 'forms/form.html.twig' %}
             </div>
-            <a class="waves-effect waves-light center btn">submit</a>
          </div>
       </div>
       <div class="section home-sponsors">

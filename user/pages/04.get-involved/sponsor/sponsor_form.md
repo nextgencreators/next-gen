@@ -6,7 +6,6 @@ form:
     fields:
         - name: honeypot
           type: honeypot
-
         - name: Company
           label: Company
           id: company-field
@@ -15,7 +14,6 @@ form:
           outerclasses: col s12
           validate:
             required: true 
-
         - name: Contact
           label: Contact
           id: contact-field
@@ -24,7 +22,6 @@ form:
           outerclasses: col s12
           validate:
             required: true
-
         - name: Address
           label: Address
           id: address-field
@@ -33,7 +30,6 @@ form:
           outerclasses: col s12
           validate:
             required: true
-
         - name: State
           label: State
           id: state-field
@@ -42,7 +38,6 @@ form:
           outerclasses: col s12
           validate:
             required: true
-
         - name: City
           label: City
           id: city-field
@@ -51,7 +46,6 @@ form:
           outerclasses: col s12
           validate:
             required: true
-
         - name: Zipcode
           label: Zipcode
           id: zipcode-field
@@ -60,7 +54,6 @@ form:
           outerclasses: col s12
           validate:
             required: true
-
         - name: Phone-number
           label: Phone-number
           id: phone-number-field
@@ -69,7 +62,6 @@ form:
           outerclasses: col s12
           validate:
             required: true
-
         - name: email
           label: Email
           id: email-field
@@ -77,7 +69,6 @@ form:
           outerclasses: col s12
           validate:
             required: true
-
     buttons:
         - type: submit
           value: Submit

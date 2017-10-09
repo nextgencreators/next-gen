@@ -1,0 +1,34 @@
+{% set jobs = page.collection({'items':'@self.children', 'pagination': true, 'limit': 10, 'order': {'by': 'default', 'dir': 'asc'}}) %}
+{% embed 'partials/base.html.twig' %}
+{% block content %}
+
+<main>
+<div class="container page-container">
+  <h3 class="page-header white-text">Job Board</h3>
+  <div class="container">
+  <div class="section">
+  </div>
+  <div class="section">
+{% for job in jobs %}
+    <div class="col s12 m7 spacing">
+        <div class="job-card">
+           <div class="item card-left">
+              <img class="job-loc-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empire_State_Building_%28HDR%29.jpg/150px-Empire_State_Building_%28HDR%29.jpg" >
+           </div>
+           <div class="item card-right">
+              <h3 class="header-mini">{{ job.title }}</h3>
+              <h3 class="header-sub muli">{{ job.header.location }}</h3>
+              <!-- <h3 class="header-loc">{{ job.header.location }}</h3> -->
+              <div class="job-desc muli">{{ job.content }}</div>
+              <a class="waves-effect waves-light light-blue-text accent-2  hero-learn" href="{{ job.url }}"><i class="material-icons r-program right">add</i>learn more</a>
+           </div>
+        </div>
+     </div>
+      {% endfor %}
+  </div>
+</div>
+</div>
+</main>
+{% endblock %}
+{% endembed %}
+

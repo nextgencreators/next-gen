@@ -90,10 +90,6 @@ $bright-blue: #40c4ff;
   color: white;
   font-weight: 600;
 }
-.inner-p-font p {
-  font-family: $muli;
-  font-weight: 300;
-}
 #event-title {
   text-transform: uppercase !important;
 }
@@ -1005,19 +1001,20 @@ label {
   display: block !important;
 }
 
-.volunteer-section [type="checkbox"] + label {
+/*.volunteer-section*/
+[type="checkbox"] + label {
   color: black;
   height: 3.7rem !important;
   line-height: 18px !important;
 }
 
-.volunteer-section [type="checkbox"].filled-in:checked + label:after {
+[type="checkbox"].filled-in:checked + label:after {
   border: 2px solid #40c4ff !important;
   background-color: #40c4ff !important;
 }
 
 
-.volunteer-section [type="checkbox"].filled-in:not(:checked) + label:after {
+[type="checkbox"].filled-in:not(:checked) + label:after {
     border: 2px solid #40c4ff !important;
 }
 
@@ -1058,7 +1055,8 @@ label {
 /*#vf2 input[type=text]:not(.browser-default), input[type=email]:not(.browser-default) {
   border-bottom: 1px solid #40c4ff !important;
 }*/
-#vf2 input[type=text]:not(.browser-default), input:not(.browser-default) {
+/*vf2*/
+input[type=text]:not(.browser-default), input:not(.browser-default) {
   border-bottom: 1px solid #40c4ff !important;
 }
 
@@ -1066,10 +1064,10 @@ input:not([type=checkbox]):not(.browser-default):focus:not([readonly]) + label {
   color: #40c4ff !important;
 }
 
-#vf2 textarea.materialize-textarea {
+textarea.materialize-textarea {
   border-bottom: 1px solid #40c4ff !important;
 }
-#vf2 .input-field label {
+.input-field label {
   color: white !important;
 }
 

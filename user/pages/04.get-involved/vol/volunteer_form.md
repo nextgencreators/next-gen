@@ -6,7 +6,6 @@ form:
     fields:
         - name: honeypot
           type: honeypot
-
         - name: skillset
           label: skillset
           id: skillset
@@ -16,7 +15,6 @@ form:
             option2: I'm super organized
             option3: I know lots of people
             option4: I have other cool skills
-
         - name: First Name
           label: First Name
           id: first-name
@@ -24,7 +22,6 @@ form:
           type: text
           validate:
             required: true
-
         - name: Last Name
           label: Last Name
           id: last-name
@@ -32,7 +29,6 @@ form:
           type: text
           validate:
             required: true
-
     buttons:
         - type: submit
           value: Submit
@@ -40,7 +36,6 @@ form:
         - type: reset
           value: Reset
           classes: btn waves-effect waves-light
-
     process:
         - save:
             fileprefix: contact-
@@ -51,6 +46,3 @@ form:
         - display: thankyou
 ---
 
-# Contact form
-
-Some sample page content
