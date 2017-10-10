@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900");
 @import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800");
+/*circle hover*/
 .page-container {
   margin-top: 3.5em; }
 
@@ -821,7 +822,7 @@ label {
   display: block !important; }
 
 /*.volunteer-section*/
-[type="checkbox"] + label {
+[type="checkbox"]:not(#burger) + label {
   color: black;
   height: 3.7rem !important;
   line-height: 18px !important; }
@@ -928,8 +929,7 @@ textarea.materialize-textarea {
   padding: 0.8em 0 0 48vw; }
 
 #top-nav {
-  /*credit - navbar based off of https://codepen.io/jlnljn/pen/LkXoBb*/
-  /*nav2*/ }
+  /*credit - navbar based off of https://codepen.io/jlnljn/pen/LkXoBb*/ }
   #top-nav input + label {
     position: absolute;
     top: 32px;
@@ -1005,26 +1005,21 @@ textarea.materialize-textarea {
 #top-nav nav ul li {
   float: none !important; }
 
-[type="checkbox"] + label:before, [type="checkbox"]:not(.filled-in) + label:after {
-  border: 2px solid #40c4ff; }
-
-#top-nav [type="checkbox"].filled-in:not(:checked) + label:after {
-  border: none; }
-
-#top-nav [type="checkbox"]:checked + label:before {
-  border-right: 2px solid transparent !important;
-  border-bottom: 2px solid transparent !important; }
-
-#top-nav [type="checkbox"].filled-in:checked + label:after {
-  background-color: #26a69a;
-  border: 2px solid #26a69a;
-  width: 0;
-  height: 0; }
-
 .form-input-file input {
   display: block !important; }
 
 .input-field label {
   color: white; }
+
+/*hacky materialize checkbox override*/
+#top-nav [type="checkbox"].filled-in:not(:checked) + label:after {
+  border: none !important; }
+
+#top-nav [type="checkbox"].filled-in:checked + label:after {
+  background-color: transparent !important;
+  border: none !important; }
+
+#top-nav [type="checkbox"].filled-in + label:before, [type="checkbox"].filled-in + label:after {
+  opacity: 0 !important; }
 
 /*# sourceMappingURL=main.css.map */

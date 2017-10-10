@@ -35,8 +35,7 @@ form:
           type: text
           outerclasses: col s12
           validate:
-            required: true
-        
+            required: true    
     buttons:
         - type: submit
           value: Submit

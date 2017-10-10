@@ -4,17 +4,14 @@ from_name:
 to:
 to_name:
 mailer:
-  engine: smtp
+  engine: mail
   smtp:
-    server: smtp.mailtrap.io
-    port: 2525
+    server: localhost
+    port: 25
     encryption: none
-    user: 'ff3bba0c90d8bc'
-    password: '58ee72e7fef101'
+    user: ''
+    password: ''
   sendmail:
     bin: '/usr/sbin/sendmail'
 content_type: text/html
 debug: false
-
-
-

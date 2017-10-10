@@ -76,7 +76,6 @@ form:
         - type: reset
           value: Reset
           classes: btn waves-effect waves-light
-
     process:
         - email:
             from: "{{ config.plugins.email.from }}"
@@ -94,4 +93,3 @@ form:
         - display: thankyou
 
 ---
-

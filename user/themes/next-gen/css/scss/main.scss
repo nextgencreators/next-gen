@@ -11,8 +11,13 @@ $source-sans: 'Source Sans Pro';
 $raleway: 'Raleway';
 $muli: 'Muli';
 $bright-blue: #40c4ff;
-
-
+/*circle hover*/
+$overlay_dark: rgba(0, 0, 0, .6); // color of overlay background
+$overlay_dark_fallback: #333; // for IE 8 & non-tranparent
+$overlay_dark_dark: #111;
+$overlay_colored: rgba(26, 74, 114, .6);// color of colored overlay background
+$overlay_colored_fallback: #1a4a72; // for IE 8 & non-tranparent
+$overlay_colored_dark: darken($overlay_colored, 15%);
 .page-container {
   margin-top: 3.5em;
 }
@@ -1002,7 +1007,7 @@ label {
 }
 
 /*.volunteer-section*/
-[type="checkbox"] + label {
+[type="checkbox"]:not(#burger) + label {
   color: black;
   height: 3.7rem !important;
   line-height: 18px !important;
@@ -1220,31 +1225,12 @@ input:checked ~ nav {
     }
   }
 }
-/*nav2*/
+
 }
 
 
 #top-nav nav ul li {
   float: none !important;
-}
-[type="checkbox"] + label:before, [type="checkbox"]:not(.filled-in) + label:after {
-  border: 2px solid #40c4ff;
-}
-#top-nav [type="checkbox"].filled-in:not(:checked) + label:after {
-  border: none;
-}
-
-#top-nav [type="checkbox"]:checked + label:before
-{
-  border-right: 2px solid transparent !important;
-  border-bottom: 2px solid transparent !important;
-}
-
-#top-nav [type="checkbox"].filled-in:checked + label:after {
-  background-color: #26a69a;
-  border: 2px solid #26a69a;
-  width: 0;
-  height: 0;
 }
 
 .form-input-file input {
@@ -1254,3 +1240,20 @@ input:checked ~ nav {
 .input-field label {
   color: white;
 }
+
+/*hacky materialize checkbox override*/
+#top-nav [type="checkbox"].filled-in:not(:checked) + label:after {
+  border: none !important;
+  }
+
+#top-nav [type="checkbox"].filled-in:checked + label:after {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+#top-nav [type="checkbox"].filled-in + label:before, [type="checkbox"].filled-in + label:after {
+  opacity: 0 !important;
+}
+
+
+

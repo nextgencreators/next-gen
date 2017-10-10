@@ -1,3 +1,3 @@
 ---
-title: 'Thanks for Sponsoring'
+title: 'Thanks for Sponsoring!'
 ---
