@@ -17,6 +17,7 @@ form:
               default: About Next Gen Creators
               validate:
                 required: true
+                
             header.about_text:
               type: editor
               label: About Text
