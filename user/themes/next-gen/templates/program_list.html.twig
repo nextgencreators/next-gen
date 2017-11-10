@@ -4,11 +4,11 @@
 <main class="programs">
   <div class="container page-container">
    <div class="section">
-    <h3 class="page-header white-text">Our Programs</h3>
+    <h3 class="page-header white-text">{{ page.title }}</h3>
     
-    <div class="row">
-      <div class="col s6">
- 		<p class="white-text muli">The key to more success is to get a massage once a week, very important, major key, cloth talk. The key to more success is to have a lot of pillows. </p>
+    <div class="row white-text muli">
+      <div class="col l8 m12">
+ 		<p class="white-text muli">{{ page.content }}</p>
       </div>
     </div>
  	{% include 'partials/program_list.html.twig' %} 

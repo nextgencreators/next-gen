@@ -4,9 +4,12 @@
 <main class="programs">
   <div class="container page-container">
   <div class="section">
-  <h3 class="page-header white-text">Project Showcase</h3>
-  <div class="row">
-  </div>
+  <h3 class="page-header white-text">{{ page.title }}</h3>
+  <div class="row white-text muli">
+      <div class="col l8 m12">
+    <p>{{ page.content }}</p>
+      </div>
+    </div>
     {% for proj in projects %}
       {% if loop.index is odd %}
       <div class="row">

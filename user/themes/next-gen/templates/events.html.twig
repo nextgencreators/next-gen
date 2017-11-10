@@ -20,9 +20,14 @@ page.collection({
 {% block content %}
 <div class="container page-container">
    <div class="events-container">
-      <h3 class="page-header white-text">Events List</h3>
+      <h3 class="page-header white-text">{{ page.title }}</h3>
       <div class="section">
       </div>
+      <div class="row white-text muli">
+      <div class="col l8 m12">
+    <p class="white-text muli">{{ page.content }}</p>
+      </div>
+    </div>
        <section class="events-listing">
       {% for event in events %}
 

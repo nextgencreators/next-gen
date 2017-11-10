@@ -1,4 +1,5 @@
 ---
+title: 'About Next Gen'
 about_text: "Next Gen Creators is a nonprofit organization started in 2015 to help provide a platform from aspiring and existing developers in the Caribbean to showcase their skills and create solutions to the world’s biggest problems.  \r\n<br>\r\n<br>\r\nThe organization eventually evolved to help young entrepreneurs and techies across the Caribbean and Latin America to innovate, collaborate and learn through a series of specially curated events and programs.  \r\n<br>\r\n<br>\r\nNext Gen Creators is the organizer of Coders Of The Caribbean, Converge Summit and pitch partners for the Diamond Challenge in Jamaica."
 quality1: Entrepreneurship
 quality1_icon: flash_on
@@ -23,6 +24,12 @@ faq:
     -
         question: 'How can I contact Next Gen Creators?'
         answer: 'Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. They will try to close the door on you, just open it. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Hammock talk come soon.'
+about_img:
+    user/themes/next-gen/images/about/about_header.JPG:
+        name: about_header.JPG
+        type: image/jpeg
+        size: 5818652
+        path: user/themes/next-gen/images/about/about_header.JPG
 custom_file:
     user/pages/02.about/outreach_pic2.JPG:
         name: outreach_pic2.JPG
@@ -59,7 +66,6 @@ custom_file:
         type: image/jpeg
         size: 7982693
         path: user/pages/02.about/outreach_pic6.JPG
-title: About
 slogan: 'Inspiring the Next Generation'
 slogan_subtext: 'Helping Youth in the Caribbean explore their passions as techies and entrepreneurs.'
 circle1_caption: 'Volunteer With Us'
@@ -69,11 +75,5 @@ join_community_caption: 'You see the hedges, how I got it shaped up? It’s impo
 contact_email: info@nextgencreators.com
 contact_number: 876-451-3421
 about-text: "Next Gen Creators is a nonprofit organization started in 2015 to help provide a platform from aspiring and existing developers in the Caribbean to showcase their skills and create solutions to the world’s biggest problems.\r\n\r\nThe organization eventually evolved to help young entrepreneurs and techies across the Caribbean and Latin America to innovate, collaborate and learn through a series of specially curated events and programs. \r\n\r\nNext Gen Creators is the organizer of Coders Of The Caribbean, Converge Summit and pitch partners for the Diamond Challenge in Jamaica."
-about_img:
-    user/themes/next-gen/images/about/about_header.JPG:
-        name: about_header.JPG
-        type: image/jpeg
-        size: 5818652
-        path: user/themes/next-gen/images/about/about_header.JPG
 ---
 

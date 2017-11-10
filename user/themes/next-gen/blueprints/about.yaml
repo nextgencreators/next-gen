@@ -11,6 +11,12 @@ form:
           title: Edit Page Content
 
           fields:
+            header.title:
+              type: text
+              label: Page Title
+              default: About Next Gen Creators
+              validate:
+                required: true
             header.about_text:
               type: editor
               label: About Text

@@ -5,10 +5,6 @@
 <div class="container">
 <section class="calendar-container clear-user-agent-styles">
 
-    <h2 class="calendar-title">{{ page.title }}</h2>
-
-    <div class="calendar-content">{{ page.content }}</div>
-
     {% set prevYearUrl = page.url ~ '/year:' ~ calendar.prevYear|date('Y') ~ '/month:' ~ calendar.prevYear|date('m') %}
     {% set nextYearUrl = page.url ~ '/year:' ~ calendar.nextYear|date('Y') ~ '/month:' ~ calendar.nextYear|date('m') %}
     {% set prevMonthUrl = page.url ~ '/year:' ~ calendar.prev.date|date('Y') ~ '/month:' ~ calendar.prev.date|date('m') %}

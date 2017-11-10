@@ -11,3 +11,4 @@ content:
     pagination: false
 ---
 
+Check out our upcoming events!
