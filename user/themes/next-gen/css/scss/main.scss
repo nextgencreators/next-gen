@@ -31,6 +31,10 @@ $overlay_colored_dark: darken($overlay_colored, 15%);
   font-family: $muli;
   font-weight: 200;
 }
+.muli-bold {
+  font-family: $muli;
+  font-weight: 400;
+}
 .lato {
   font-family: $lato;
   font-weight: 400;
@@ -591,15 +595,13 @@ nav ul a:hover {
   font-weight: 400;
 }
 .hero .cont {
-  padding-left: 4em;
-  padding-top: 18.5vh;
+  /*padding-top: 18.5vh;*/
+ /* padding-left: 4em;
   background-color: transparent;
-  max-width: 40%;
+  max-width: 40%;*/
 }
 
-.programs-img {
-  max-width: 85% !important;
-}
+
 
 
 .module {
@@ -654,20 +656,24 @@ nav ul a:hover {
   font-size: 22px !important;
 }
 
-.home-programs .row {
-  margin-bottom: 5em;
-}
+
+
+
 
 /*.home-programs img programs-img {
   padding-left: 2em;
   padding-right: 2em;
 }*/
-.hero .cont .btn {
+.hero .btn {
   margin-top: 1.5em;
 }
 
-.home-involved, .home-join, .home-programs, .home-sponsors, .home-join {
+.home-involved, .home-join, .home-programs, .home-sponsors, .home-contact {
   margin-top: 10em;
+}
+
+.home-programs .row {
+  margin-top: 7rem;
 }
 
 .home-sub {
@@ -676,15 +682,40 @@ nav ul a:hover {
   padding-bottom: 1.6em;
 }
 
-.two-right {
-  width: 85%;
+
+
+
+@media only screen and (min-width: 993px) {
+  .right-text-content {
+    margin-left: 1rem;
+  }
+  .two-right {
+    /*width: 85%;*/
+  }
+  /*.l-program {
+    margin-left: 2.7em;
+  }
+  .r-program {
+    margin-right: 2.7em;
+  }*/
+  /*.programs-img {
+    max-width: 85% !important;
+  }*/
+
+  /*.alternating-rows .row:nth-child(odd) .alternating-img {
+    float: left !important;
+  }
+  .alternating-rows .row:nth-child(odd) .alternating-img > .programs-img {
+    float: left !important;
+  }
+.alternating-rows .row:nth-child(even) .alternating-img {
+  float: right !important;
 }
-.l-program {
-  margin-left: 2.7em;
+.alternating-rows .row:nth-child(even) .alternating-img > .programs-img {
+  float: right !important;
+}*/
 }
-.r-program {
-  margin-right: 2.7em;
-}
+
 .home-sub-mini {
  /* color: $green;*/
   font-size: 1.5rem;
@@ -699,7 +730,6 @@ nav ul a:hover {
   font-weight: 400;
 }
 .home-below-text {
-  width: 46.5em;
   margin: 0 auto;
   p {
     font-size: 1.2rem;
@@ -851,7 +881,7 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
   border-radius: 25px !important;
 }
 
-@media only screen and (min-width: 1362px) {
+/*@media only screen and (min-width: 1362px) {
   .hero .cont  {
     max-width: 39%;
     padding-left: 9em;
@@ -869,7 +899,7 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
     max-width: 50%;
     padding-left: 9em;
   }
-}
+}*/
 .top-bg {
   background-color: $top-bg !important;
 }
@@ -1064,19 +1094,19 @@ label {
   border-bottom: 1px solid #40c4ff !important;
 }*/
 /*vf2*/
-input[type=text]:not(.browser-default), input:not(.browser-default) {
+/*input[type=text]:not(.browser-default), input:not(.browser-default) {
   border-bottom: 1px solid #40c4ff !important;
-}
-
-input:not([type=checkbox]):not(.browser-default):focus:not([readonly]) + label {
+}*/
+input:not([type]):not(.browser-default):focus:not([readonly]) + label {
   color: #40c4ff !important;
 }
-
-textarea.materialize-textarea {
-  border-bottom: 1px solid #40c4ff !important;
+input:not([type=checkbox]):not(.browser-default):focus:not([readonly]) + label {
+  /*color: #40c4ff !important;*/
+  border-bottom: $bright-blue !important;
 }
-.input-field label {
-  color: white !important;
+
+input:not([type]):focus:not([readonly]) + label, input[type]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea {
+  border-bottom: 1px solid #40c4ff !important;
 }
 
 .buttons {
@@ -1240,7 +1270,11 @@ input:checked ~ nav {
     display: block !important;
 }
 
-.input-field label {
+.input-field label:not(.label-icon).active {
+  color: $bright-blue !important;
+}
+
+.input-field input {
   color: white;
 }
 
