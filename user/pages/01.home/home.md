@@ -59,7 +59,7 @@ form:
             id: name-field
             autocomplete: 'on'
             type: text
-            outerclasses: 'col s12'
+            outerclasses: 'input-field col s12'
             validate:
                 required: true
         -
@@ -67,7 +67,7 @@ form:
             label: 'Email Address'
             id: email-field
             type: email
-            outerclasses: 'col s12'
+            outerclasses: 'input-field col s12'
             validate:
                 required: true
         -
@@ -76,7 +76,7 @@ form:
             id: subject-field
             autocomplete: 'on'
             type: text
-            outerclasses: 'col s12'
+            outerclasses: 'input-field col s12'
             validate:
                 required: true
         -
@@ -85,7 +85,7 @@ form:
             id: message-field
             autocomplete: 'on'
             type: text
-            outerclasses: 'col s12'
+            outerclasses: 'input-field col s12'
             validate:
                 required: true
     buttons:

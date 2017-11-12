@@ -1,9 +1,22 @@
 var jq321 = $.noConflict(true);
 
 
+// fix floating label bug
+(function($) {
+  var selector = '.input-field label';
+  var thing = '.input-field input'
+
+  $(thing).focus(function() {
+    $(this).parents('.form-data ').siblings('.form-label ').children('label').addClass('active');
+  });
+  $(thing).blur(function() {
+    if ($(this).val().length < 1) {
+      $(this).parents('.form-data ').siblings('.form-label ').children('label').removeClass('active');
+    }  
+  });
+}(jq321));
+
 // nav onclick 
-
-
 (function($) {
   $(document).ready(function() {
     $('.parent-link').click(function() {

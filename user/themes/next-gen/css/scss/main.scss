@@ -997,6 +997,9 @@ list-style: none;
   border-radius: 14px;
   padding: 2.5rem 2rem 1rem 3rem;
   margin-bottom: 2rem;
+  .form-label label {
+   display: none !important;
+  }
   label {
     font-size: 1.5rem;
   }
@@ -1251,7 +1254,7 @@ input:checked ~ nav {
   border: none !important;
 }
 
-#top-nav [type="checkbox"].filled-in + label:before, [type="checkbox"].filled-in + label:after {
+#top-nav [type="checkbox"].filled-in + label:before, #top-nav [type="checkbox"].filled-in + label:after {
   opacity: 0 !important;
 }
 
