@@ -241,7 +241,7 @@ $overlay_colored_dark: darken($overlay_colored, 15%);
 }
 
 .spacing {
-  margin-bottom: 2.5em !important;
+  padding-bottom: 2em !important;
 }
 
 .job-desc, .job-desc p {
@@ -269,6 +269,11 @@ $overlay_colored_dark: darken($overlay_colored, 15%);
   margin: 0 auto;
 /*  width: 15em !important;*/
 }
+
+.top-align-p {
+  margin: 0;
+}
+
 #fund-graph {
   width: 50% !important;
   height: 18em !important;
@@ -424,7 +429,7 @@ main {
 }
 .page-footer {
   padding-top: 2.2em !important;
-  background-color: $bright-blue !important;
+  background-color: $top-bg !important;
 }
 nav {
   background-color: $top-bg !important;
@@ -672,7 +677,11 @@ nav ul a:hover {
   margin-top: 10em;
 }
 
-.home-programs .row {
+.content-block {
+  margin-top: 5em;
+}
+
+.home-programs .row + .row {
   margin-top: 7rem;
 }
 

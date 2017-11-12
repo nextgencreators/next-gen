@@ -190,7 +190,7 @@
   width: 100%; }
 
 .spacing {
-  margin-bottom: 2.5em !important; }
+  padding-bottom: 2em !important; }
 
 .job-desc, .job-desc p {
   padding-top: 5px;
@@ -214,6 +214,9 @@
 #about-team-sec .card {
   margin: 0 auto;
   /*  width: 15em !important;*/ }
+
+.top-align-p {
+  margin: 0; }
 
 #fund-graph {
   width: 50% !important;
@@ -345,7 +348,7 @@ main {
 
 .page-footer {
   padding-top: 2.2em !important;
-  background-color: #40c4ff !important; }
+  background-color: #2e343f !important; }
 
 nav {
   background-color: #2e343f !important; }
@@ -542,7 +545,10 @@ nav ul a:hover {
 .home-involved, .home-join, .home-programs, .home-sponsors, .home-contact {
   margin-top: 10em; }
 
-.home-programs .row {
+.content-block {
+  margin-top: 5em; }
+
+.home-programs .row + .row {
   margin-top: 7rem; }
 
 .home-sub {
