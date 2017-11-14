@@ -1,4 +1,5 @@
 ---
+title: 'Get Involved'
 featured_subtext: 'We have some exciting events coming up and we''d love to meet you there!'
 other_ways_subtext: 'I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there.'
 other_ways:
@@ -14,7 +15,7 @@ other_ways:
         name: Subscribe
         description: 'Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. They will try to close the door on you, just open it. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Hammock talk come soon.'
         url_bottom: /next-gen/get_involved
-title: 'Get Involved'
+other_ways_link: /next-gen/get_involved
 form:
     name: email-form
     fields:

@@ -22,6 +22,7 @@ form:
             label: 'First Name'
             id: first-name
             autocomplete: 'on'
+            outerclasses: 'input-field'
             type: text
             validate:
                 required: true
@@ -30,6 +31,7 @@ form:
             label: 'Last Name'
             id: last-name
             autocomplete: 'on'
+            outerclasses: 'input-field'
             type: text
             validate:
                 required: true

@@ -47,3 +47,10 @@ form:
                   type: text
                   label: URL to Display on Bottom (Optional)
 
+            header.other_ways_link:
+              type: text
+              label: Other Ways to Get Involved Section Link
+              default: /next-gen/get-involved
+              validate:
+                required: true
+

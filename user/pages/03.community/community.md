@@ -1,4 +1,5 @@
 ---
+title: Community
 about_text: 'Hello there! We are a non-profit organization providing a platform for youth to explore their skills as entrepreneurs and innovators through events and projects that provides opportunites for real-life application. We empower the Caribbean and Latin America regions'' young developers, designers, and tech-entrepreneurs.'
 join_subtext: 'Become a part of our community and gain awesome benefits!'
 benefits:
@@ -8,7 +9,8 @@ benefits:
         benefit: 'Discount coupons for Next Gen events'
     -
         benefit: 'Get introduced to top leaders across different sectors'
-title: Community
+cofounders_subtext: 'copy writing copy writing copy writing copy writing'
+job_board_subtext: 'copy writing copy writing copy writing copy writing'
 custom_file:
     user/pages/03.community/outreach_pic2.JPG:
         name: outreach_pic2.JPG

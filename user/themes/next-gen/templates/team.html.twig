@@ -10,7 +10,7 @@
    <div class="section">
      <div class="row">
       {% for member in page.header.team_members %}
-         <div class="col s4">
+         <div class="col m4 s12 spacing">
             <div class="card profile-card">
                <div class="card-image waves-effect waves-block waves-light">
                   <img class="activator" src="{{ base_url }}/{{ member.picture|first.path }}">
@@ -26,7 +26,6 @@
                   <span class="card-title grey-text text-darken-4">{{ member.name }}<i class="material-icons right">close</i></span>
                   <p class="team-about-text">{{ member.bio }}</p>
                   <p class="mantra-text">Mantra:</p>
-                  }
                   <blockquote class="team-about-quote">{{ member.mantra }}</blockquote>
                </div>
             </div>

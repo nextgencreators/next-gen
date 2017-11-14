@@ -33,6 +33,13 @@ form:
               accept:
                 - image/*
 
+            header.how_work_subtext:
+              type: text
+              label: How We Work Subtext
+              default: Our results are guaranteed - here are our methodologies for success
+              validate:
+                required: true
+
             header.quality1:
               type: text
               label: How We Work Quality 1
@@ -96,10 +103,24 @@ form:
               validate:
                 required: true
 
+            header.fund_allocation_subtext:
+              type: text
+              label: Fund Allocation Subtext
+              default: copy writing copy writing copy writing copy writing
+              validate:
+                required: true
+
             header.fund_allocation_description:
               type: editor
               label: Fund Allocation Description
               default: Next Gen Creators is funded by generous donations from sponsors and our partners. 100% of all funds raised by the organization is used for project implementation. If you’d like to help our organization to inspire the next generation, Kindly consider donating to Next Gen Creators (our contact our team for more info).              
+              validate:
+                required: true 
+
+            header.outreach_subtext:
+              type: text
+              label: Outreach Subtext
+              default: copy writing copy writing copy writing copy writing
               validate:
                 required: true
 
@@ -112,6 +133,13 @@ form:
               filesize: 10
               accept:
                 - image/*
+
+            header.faq_subtext:
+              type: text
+              label: FAQs Subtext
+              default: copy writing copy writing copy writing copy writing
+              validate:
+                required: true
 
             header.faq:
               type: list

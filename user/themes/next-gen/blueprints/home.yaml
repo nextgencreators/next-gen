@@ -1,5 +1,4 @@
 title: Home
-
 form:
   fields:
     tabs:
@@ -26,6 +25,13 @@ form:
               validate:
                 required: true
 
+            header.get_involved.subtext:
+              type: text
+              label: Get Involved Subtext
+              default: copywritingcopywritingcopywritingcopywriting
+              validate:
+                required: true
+
             header.circle1_img:
               type: file 
               label: Circle 1 Image
@@ -39,6 +45,20 @@ form:
               label: Circle 1 Caption
               default: Volunteer With Us
               validate: 
+                required: true
+
+            header.circle1_hover_text:
+              type: text
+              label: Circle 1 Hover Text
+              default: Want to Volunteer?
+              validate:
+                required: true
+
+            header.circle1_hover_link:
+              type: text
+              label: Circle 1 Hover Link
+              default: '/'
+              validate:
                 required: true
 
             header.circle2_img:
@@ -57,6 +77,20 @@ form:
               validate: 
                 required: true
 
+            header.circle2_hover_text:
+              type: text
+              label: Circle 2 Hover Text
+              default: Want to Sponsor?
+              validate:
+                required: true
+
+            header.circle2_hover_link:
+              type: text
+              label: Circle 2 Hover Link
+              default: '/'
+              validate:
+                required: true
+
             header.circle3_img:
               type: file 
               label: Circle 3 Image
@@ -71,6 +105,27 @@ form:
               label: Circle 3 Caption
               default: See our Events
               validate: 
+                required: true
+
+            header.circle3_hover_text:
+              type: text
+              label: Circle 3 Hover Text
+              default: Come to an Event!
+              validate:
+                required: true
+
+            header.circle3_hover_link:
+              type: text
+              label: Circle 3 Hover Link
+              default: '/'
+              validate:
+                required: true
+
+            header.join_community.subtext:
+              type: text
+              label: Join Community Subtext
+              default: copywritingcopywritingcopywritingcopywriting
+              validate:
                 required: true
 
             header.join_community_img:
@@ -89,6 +144,20 @@ form:
               validate:
                 required: true
 
+            header.programs.subtext:
+              type: text
+              label: Programs Subtext
+              default: copywritingcopywritingcopywritingcopywriting
+              validate:
+                required: true
+
+            header.contact_us.subtext:
+              type: text
+              label: Contact Us Subtext
+              default: copywritingcopywritingcopywritingcopywriting
+              validate:
+                required: true
+
             header.contact_email:
               type: text
               label: Contact Email
@@ -103,6 +172,13 @@ form:
               validate:
                 required: true
 
+            header.sponsors_donors.subtext:
+              type: text
+              label: Sponsors Donors Subtext
+              default: copywritingcopywritingcopywritingcopywriting
+              validate:
+                required: true
+                
             header.custom_file:
               type: file
               label: A Label

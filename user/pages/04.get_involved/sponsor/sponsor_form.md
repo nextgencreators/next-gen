@@ -13,7 +13,7 @@ form:
             id: company-field
             autocomplete: 'on'
             type: text
-            outerclasses: 'col s12'
+            outerclasses: 'input-field col s12'
             validate:
                 required: true
         -
@@ -22,7 +22,7 @@ form:
             id: contact-field
             autocomplete: 'on'
             type: text
-            outerclasses: 'col s12'
+            outerclasses: 'input-field col s12'
             validate:
                 required: true
         -
@@ -31,7 +31,7 @@ form:
             id: address-field
             autocomplete: 'on'
             type: text
-            outerclasses: 'col s12'
+            outerclasses: 'input-field col s12'
             validate:
                 required: true
         -
@@ -40,7 +40,7 @@ form:
             id: state-field
             autocomplete: 'on'
             type: text
-            outerclasses: 'col s12'
+            outerclasses: 'input-field col s12'
             validate:
                 required: true
         -
@@ -49,7 +49,7 @@ form:
             id: city-field
             autocomplete: 'on'
             type: text
-            outerclasses: 'col s12'
+            outerclasses: 'input-field col s12'
             validate:
                 required: true
         -
@@ -58,7 +58,7 @@ form:
             id: zipcode-field
             autocomplete: 'on'
             type: text
-            outerclasses: 'col s12'
+            outerclasses: 'input-field col s12'
             validate:
                 required: true
         -
@@ -67,7 +67,7 @@ form:
             id: phone-number-field
             autocomplete: 'on'
             type: text
-            outerclasses: 'col s12'
+            outerclasses: 'input-field col s12'
             validate:
                 required: true
         -
@@ -75,7 +75,7 @@ form:
             label: Email
             id: email-field
             type: email
-            outerclasses: 'col s12'
+            outerclasses: 'input-field col s12'
             validate:
                 required: true
     buttons:

@@ -8,7 +8,7 @@
          <p class="white-text muli under-header-text">{{ page.header.about_text }}</p>
       </div>
    </div>
-   <div class="section gi-sec" id="index-banner">
+   <div class="section" id="index-banner">
       <div class="gi-header">
          <!-- change inline-styling later, temporary fix -->
          <h4 class="header white-text">Join Community</h4>
@@ -55,10 +55,10 @@
     </div>
       </div>
    </div>
-   <div class="section gi-sec" id="index-banner">
+   <div class="section content-block" id="index-banner">
       <h4 class="header white-text">Our Cofounders</h4>
       <div class="col s12 m7 spacing">
-         <p class="white-text zero-line-height">Check out some of the amazing people in NextGen!</p>
+         <p class="white-text zero-line-height">{{ page.header.cofounders_subtext }}</p>
       </div>
 
          <div class="section">
@@ -102,12 +102,12 @@
    </div>
 
    </div>
-   <div class="section gi-sec" id="index-banner">
+   <div class="section content-block" id="index-banner">
             <div class="gi-header">
          <!-- change inline-styling later, temporary fix -->
          <h4 class="header white-text">Job Board</h4>
          <div class="col s12 m7 spacing">
-            <p class="white-text zero-line-height">Interested in working with us? Check out our available jobs!</p>
+            <p class="white-text zero-line-height">{{ page.header.job_board_subtext }}</p>
          </div>
       </div>
       <div class="row center-align">

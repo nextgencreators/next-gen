@@ -31,6 +31,10 @@ $overlay_colored_dark: darken($overlay_colored, 15%);
   font-family: $muli;
   font-weight: 200;
 }
+.muli-bold {
+  font-family: $muli;
+  font-weight: 400;
+}
 .lato {
   font-family: $lato;
   font-weight: 400;
@@ -237,7 +241,7 @@ $overlay_colored_dark: darken($overlay_colored, 15%);
 }
 
 .spacing {
-  margin-bottom: 2.5em !important;
+  padding-bottom: 2em !important;
 }
 
 .job-desc, .job-desc p {
@@ -265,6 +269,11 @@ $overlay_colored_dark: darken($overlay_colored, 15%);
   margin: 0 auto;
 /*  width: 15em !important;*/
 }
+
+.top-align-p {
+  margin: 0;
+}
+
 #fund-graph {
   width: 50% !important;
   height: 18em !important;
@@ -420,7 +429,7 @@ main {
 }
 .page-footer {
   padding-top: 2.2em !important;
-  background-color: $bright-blue !important;
+  background-color: $top-bg !important;
 }
 nav {
   background-color: $top-bg !important;
@@ -591,15 +600,13 @@ nav ul a:hover {
   font-weight: 400;
 }
 .hero .cont {
-  padding-left: 4em;
-  padding-top: 18.5vh;
+  /*padding-top: 18.5vh;*/
+ /* padding-left: 4em;
   background-color: transparent;
-  max-width: 40%;
+  max-width: 40%;*/
 }
 
-.programs-img {
-  max-width: 85% !important;
-}
+
 
 
 .module {
@@ -649,25 +656,34 @@ nav ul a:hover {
 .rarrow {
   color: $green;
   font-size: 40px !important;
+  vertical-align: middle;
 }
 .home-fs i {
   font-size: 22px !important;
 }
 
-.home-programs .row {
-  margin-bottom: 5em;
-}
+
+
+
 
 /*.home-programs img programs-img {
   padding-left: 2em;
   padding-right: 2em;
 }*/
-.hero .cont .btn {
+.hero .btn {
   margin-top: 1.5em;
 }
 
-.home-involved, .home-join, .home-programs, .home-sponsors, .home-join {
+.home-involved, .home-join, .home-programs, .home-sponsors, .home-contact {
   margin-top: 10em;
+}
+
+.content-block {
+  margin-top: 5em;
+}
+
+.home-programs .row + .row {
+  margin-top: 7rem;
 }
 
 .home-sub {
@@ -676,15 +692,40 @@ nav ul a:hover {
   padding-bottom: 1.6em;
 }
 
-.two-right {
-  width: 85%;
+
+
+
+@media only screen and (min-width: 993px) {
+  .right-text-content {
+    margin-left: 1rem;
+  }
+  .two-right {
+    /*width: 85%;*/
+  }
+  /*.l-program {
+    margin-left: 2.7em;
+  }
+  .r-program {
+    margin-right: 2.7em;
+  }*/
+  /*.programs-img {
+    max-width: 85% !important;
+  }*/
+
+  /*.alternating-rows .row:nth-child(odd) .alternating-img {
+    float: left !important;
+  }
+  .alternating-rows .row:nth-child(odd) .alternating-img > .programs-img {
+    float: left !important;
+  }
+.alternating-rows .row:nth-child(even) .alternating-img {
+  float: right !important;
 }
-.l-program {
-  margin-left: 2.7em;
+.alternating-rows .row:nth-child(even) .alternating-img > .programs-img {
+  float: right !important;
+}*/
 }
-.r-program {
-  margin-right: 2.7em;
-}
+
 .home-sub-mini {
  /* color: $green;*/
   font-size: 1.5rem;
@@ -699,7 +740,6 @@ nav ul a:hover {
   font-weight: 400;
 }
 .home-below-text {
-  width: 46.5em;
   margin: 0 auto;
   p {
     font-size: 1.2rem;
@@ -717,36 +757,21 @@ nav ul a:hover {
   }
 }
 
-/* circle hover styles - taken from
-https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transitions/
-*/
-.ch-grid {
-  margin: 20px 0 0 0;
-  padding: 0;
-  list-style: none;
-  display: block;
+.photo-grid {
+  margin: 1em auto;
+  max-width: 1106px;
   text-align: center;
-  width: 100%;
 }
 
-.ch-grid:after,
-.ch-item:before {
-  content: '';
-    display: table;
-}
-
-.ch-grid:after {
-  clear: both;
-}
-
-.ch-grid li {
+/* circle hover styles based off of http://geekgirllife.com/animate-text-over-images-on-hover-without-javascript/ */
+.photo-grid li {
+  display: inline-block;
   width: 260px;
   height: 260px;
-  display: inline-block;
 }
 
 @media only screen and (max-width: 1090px) {
-  .ch-grid li {
+  .photo-grid li {
     width: 200px;
     height: 200px;
     display: inline-block;
@@ -754,7 +779,7 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
 }
 
 @media only screen and (max-width: 730px) {
-  .ch-grid li {
+  .photo-grid li {
     width: 175px;
     height: 175px;
     display: inline-block;
@@ -762,96 +787,90 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
 }
 
 @media only screen and (max-width: 595px) {
-  .ch-grid li {
+  .photo-grid li {
     width: 155px;
     height: 155px;
     display: inline-block;
   }
 }
 
-.ch-item {
-  width: 100%;
-  height: 100%;
+
+.photo-grid img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.photo-grid .fig {
   border-radius: 50%;
+  height: 100%;
   overflow: hidden;
   position: relative;
+  width: 100%;
+  box-shadow: inset 0 0 0 4.5px rgba(255,255,255,0.6),
+    0 1px 2px rgba(0,0,0,0.1);
   cursor: default;
   background-size: cover;
   background-position: center;
-  box-shadow:
-    inset 0 0 0 4.5px rgba(255,255,255,0.6),
-    0 1px 2px rgba(0,0,0,0.1);
-  transition: all 0.1s ease-in-out;
 }
-.ch-info {
-  position: absolute;
+
+.photo-grid .inner-content {
   background: rgba(64,196,255, 0.65);
-  width: inherit;
-  height: inherit;
-  border-radius: 50%;
-  overflow: hidden;
+  color: white;
+  display: table;
+  height: 100%;
+  width: 100%;
+  left: 0;
   opacity: 0;
-  transition: all 0.4s ease-in-out;
-  transform: scale(0);
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-transition-delay: 100ms;
+  -moz-transition-delay: 100ms;
+  transition-delay: 100ms;
+  z-index: 100;
 }
-.ch-info h3 {
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 22px;
-  margin: 0 30px;
-  padding: 45px 0 0 0;
-  height: 140px;
-  text-shadow:
-    0 0 1px #fff,
-    0 1px 2px rgba(0,0,0,0.3);
+
+.photo-grid .inner-content p, .photo-grid .inner-content a {
+  padding-left: 5px;
+  display: table-cell;
+  font-size: 1.5em;
+  position: relative;
+  top: -40px;
+   -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  vertical-align: middle;
+  vertical-align: middle;
 }
-.ch-info p {
-  color: #fff;
-  padding: 10px 5px;
-  font-style: italic;
-  margin: 0 30px;
-  font-size: 12px;
-  border-top: 1px solid rgba(255,255,255,0.5);
-  opacity: 0;
-  transition: all 1s ease-in-out 0.15s;
+
+.photo-grid .inner-content p {
+  width: 80%;
 }
-.ch-info p a {
-  display: inline-block;
-  color: rgb(255,255,255);
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1em;
-  letter-spacing: 1px;
-  padding-top: 4px;
+
+.photo-grid .inner-content a {
+  width: 20%;
 }
-.c-info p i {
-  display: inline-block;
-}
-.ch-info p a:hover {
-  color: rgba(255,242,34, 0.8);
-}
-.ch-item:hover {
-  box-shadow:
-    inset 0 0 0 1px rgba(255,255,255,0.1),
-    0 1px 2px rgba(0,0,0,0.1);
-}
-.ch-item:hover .ch-info {
-  transform: scale(1);
+.photo-grid li:hover .inner-content {
   opacity: 1;
 }
-.ch-item:hover .ch-info p {
-  opacity: 1;
+
+.photo-grid li:hover .inner-content p, .photo-grid li:hover .inner-content a {
+  -moz-transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
 }
-/*end circle hover styles*/
+
 
 .btn {
   background-color: $green !important;
   border-radius: 25px !important;
 }
 
-@media only screen and (min-width: 1362px) {
+/*@media only screen and (min-width: 1362px) {
   .hero .cont  {
     max-width: 39%;
     padding-left: 9em;
@@ -869,7 +888,7 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
     max-width: 50%;
     padding-left: 9em;
   }
-}
+}*/
 .top-bg {
   background-color: $top-bg !important;
 }
@@ -997,6 +1016,9 @@ list-style: none;
   border-radius: 14px;
   padding: 2.5rem 2rem 1rem 3rem;
   margin-bottom: 2rem;
+  .form-label label {
+   display: none !important;
+  }
   label {
     font-size: 1.5rem;
   }
@@ -1061,19 +1083,19 @@ label {
   border-bottom: 1px solid #40c4ff !important;
 }*/
 /*vf2*/
-input[type=text]:not(.browser-default), input:not(.browser-default) {
+/*input[type=text]:not(.browser-default), input:not(.browser-default) {
   border-bottom: 1px solid #40c4ff !important;
-}
-
-input:not([type=checkbox]):not(.browser-default):focus:not([readonly]) + label {
+}*/
+input:not([type]):not(.browser-default):focus:not([readonly]) + label {
   color: #40c4ff !important;
 }
-
-textarea.materialize-textarea {
-  border-bottom: 1px solid #40c4ff !important;
+input:not([type=checkbox]):not(.browser-default):focus:not([readonly]) + label {
+  /*color: #40c4ff !important;*/
+  border-bottom: $bright-blue !important;
 }
-.input-field label {
-  color: white !important;
+
+input:not([type]):focus:not([readonly]) + label, input[type]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea {
+  border-bottom: 1px solid #40c4ff !important;
 }
 
 .buttons {
@@ -1126,7 +1148,7 @@ textarea.materialize-textarea {
 .logo {
 position: relative;
 z-index: 6;
-height: 4em;
+height: 4.7em;
 float: left;
 padding: 0.8em 0 0 48vw;
 }
@@ -1237,7 +1259,12 @@ input:checked ~ nav {
     display: block !important;
 }
 
-.input-field label {
+
+.focused-input-blue {
+  color: $bright-blue !important;
+}
+
+.input-field input {
   color: white;
 }
 
@@ -1251,7 +1278,7 @@ input:checked ~ nav {
   border: none !important;
 }
 
-#top-nav [type="checkbox"].filled-in + label:before, [type="checkbox"].filled-in + label:after {
+#top-nav [type="checkbox"].filled-in + label:before, #top-nav [type="checkbox"].filled-in + label:after {
   opacity: 0 !important;
 }
 

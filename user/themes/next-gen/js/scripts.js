@@ -1,9 +1,25 @@
 var jq321 = $.noConflict(true);
 
 
+// fix floating label bug
+(function($) {
+  var selector = '.input-field label';
+  var input = '.input-field input'
+
+  $(input).focus(function() {
+    $(this).parents('.form-data ').siblings('.form-label ').children('label').addClass('focused-input-blue');
+    $(this).parents('.form-data ').siblings('.form-label ').children('label').addClass('active');
+    
+  });
+  $(input).blur(function() {
+    $(this).parents('.form-data ').siblings('.form-label ').children('label').removeClass('focused-input-blue');
+    if ($(this).val().length < 1) {
+      $(this).parents('.form-data ').siblings('.form-label ').children('label').removeClass('active');
+    }  
+  });
+}(jq321));
+
 // nav onclick 
-
-
 (function($) {
   $(document).ready(function() {
     $('.parent-link').click(function() {
@@ -129,34 +145,4 @@ map = new google.maps.Map(document.getElementById('map'), {
 });
 }
 
-//
-// about.html, community.html
-//
-
-// var slideIndex = 1;
-// showDivs(slideIndex);
-
-// function plusDivs(n) {
-//   showDivs(slideIndex += n);
-// }
-
-// function currentDiv(n) {
-//   showDivs(slideIndex = n);
-// }
-
-// function showDivs(n) {
-//   var i;
-//   var x = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("demo");
-//   if (n > x.length) {slideIndex = 1}    
-//   if (n < 1) {slideIndex = x.length}
-//   for (i = 0; i < x.length; i++) {
-//      x[i].style.display = "none";  
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//      dots[i].className = dots[i].className.replace(" w3-white", "");
-//   }
-//   x[slideIndex-1].style.display = "block";  
-//   dots[slideIndex-1].className += " w3-white";
-// }
 

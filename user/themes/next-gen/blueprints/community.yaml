@@ -41,6 +41,13 @@ form:
                   type: text
                   label: Benefit
 
+            header.cofounders_subtext:
+              type: text
+              label: Cofounders Subtext
+              default: copy writing copy writing copy writing copy writing
+              validate:
+                required: true
+
             header.custom_file:
               type: file
               label: Slideshow Photos
@@ -50,4 +57,11 @@ form:
               filesize: 10
               accept:
                 - image/*
+
+            header.job_board_subtext:
+              type: text
+              label: Job Board Subtext
+              default: copy writing copy writing copy writing copy writing
+              validate:
+                required: true
                
