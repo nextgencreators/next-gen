@@ -656,6 +656,7 @@ nav ul a:hover {
 .rarrow {
   color: $green;
   font-size: 40px !important;
+  vertical-align: middle;
 }
 .home-fs i {
   font-size: 22px !important;
@@ -756,36 +757,21 @@ nav ul a:hover {
   }
 }
 
-/* circle hover styles - taken from
-https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transitions/
-*/
-.ch-grid {
-  margin: 20px 0 0 0;
-  padding: 0;
-  list-style: none;
-  display: block;
+.photo-grid {
+  margin: 1em auto;
+  max-width: 1106px;
   text-align: center;
-  width: 100%;
 }
 
-.ch-grid:after,
-.ch-item:before {
-  content: '';
-    display: table;
-}
-
-.ch-grid:after {
-  clear: both;
-}
-
-.ch-grid li {
+/* circle hover styles based off of http://geekgirllife.com/animate-text-over-images-on-hover-without-javascript/ */
+.photo-grid li {
+  display: inline-block;
   width: 260px;
   height: 260px;
-  display: inline-block;
 }
 
 @media only screen and (max-width: 1090px) {
-  .ch-grid li {
+  .photo-grid li {
     width: 200px;
     height: 200px;
     display: inline-block;
@@ -793,7 +779,7 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
 }
 
 @media only screen and (max-width: 730px) {
-  .ch-grid li {
+  .photo-grid li {
     width: 175px;
     height: 175px;
     display: inline-block;
@@ -801,89 +787,83 @@ https://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transition
 }
 
 @media only screen and (max-width: 595px) {
-  .ch-grid li {
+  .photo-grid li {
     width: 155px;
     height: 155px;
     display: inline-block;
   }
 }
 
-.ch-item {
-  width: 100%;
-  height: 100%;
+
+.photo-grid img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.photo-grid .fig {
   border-radius: 50%;
+  height: 100%;
   overflow: hidden;
   position: relative;
+  width: 100%;
+  box-shadow: inset 0 0 0 4.5px rgba(255,255,255,0.6),
+    0 1px 2px rgba(0,0,0,0.1);
   cursor: default;
   background-size: cover;
   background-position: center;
-  box-shadow:
-    inset 0 0 0 4.5px rgba(255,255,255,0.6),
-    0 1px 2px rgba(0,0,0,0.1);
-  transition: all 0.1s ease-in-out;
 }
-.ch-info {
-  position: absolute;
+
+.photo-grid .inner-content {
   background: rgba(64,196,255, 0.65);
-  width: inherit;
-  height: inherit;
-  border-radius: 50%;
-  overflow: hidden;
+  color: white;
+  display: table;
+  height: 100%;
+  width: 100%;
+  left: 0;
   opacity: 0;
-  transition: all 0.4s ease-in-out;
-  transform: scale(0);
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-transition-delay: 100ms;
+  -moz-transition-delay: 100ms;
+  transition-delay: 100ms;
+  z-index: 100;
 }
-.ch-info h3 {
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 22px;
-  margin: 0 30px;
-  padding: 45px 0 0 0;
-  height: 140px;
-  text-shadow:
-    0 0 1px #fff,
-    0 1px 2px rgba(0,0,0,0.3);
+
+.photo-grid .inner-content p, .photo-grid .inner-content a {
+  padding-left: 5px;
+  display: table-cell;
+  font-size: 1.5em;
+  position: relative;
+  top: -40px;
+   -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  vertical-align: middle;
+  vertical-align: middle;
 }
-.ch-info p {
-  color: #fff;
-  padding: 10px 5px;
-  font-style: italic;
-  margin: 0 30px;
-  font-size: 12px;
-  border-top: 1px solid rgba(255,255,255,0.5);
-  opacity: 0;
-  transition: all 1s ease-in-out 0.15s;
+
+.photo-grid .inner-content p {
+  width: 80%;
 }
-.ch-info p a {
-  display: inline-block;
-  color: rgb(255,255,255);
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1em;
-  letter-spacing: 1px;
-  padding-top: 4px;
+
+.photo-grid .inner-content a {
+  width: 20%;
 }
-.c-info p i {
-  display: inline-block;
-}
-.ch-info p a:hover {
-  color: rgba(255,242,34, 0.8);
-}
-.ch-item:hover {
-  box-shadow:
-    inset 0 0 0 1px rgba(255,255,255,0.1),
-    0 1px 2px rgba(0,0,0,0.1);
-}
-.ch-item:hover .ch-info {
-  transform: scale(1);
+.photo-grid li:hover .inner-content {
   opacity: 1;
 }
-.ch-item:hover .ch-info p {
-  opacity: 1;
+
+.photo-grid li:hover .inner-content p, .photo-grid li:hover .inner-content a {
+  -moz-transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
 }
-/*end circle hover styles*/
+
 
 .btn {
   background-color: $green !important;
