@@ -1148,7 +1148,7 @@ input:not([type]):focus:not([readonly]) + label, input[type]:not(.browser-defaul
 .logo {
 position: relative;
 z-index: 6;
-height: 4em;
+height: 4.7em;
 float: left;
 padding: 0.8em 0 0 48vw;
 }
@@ -1259,7 +1259,8 @@ input:checked ~ nav {
     display: block !important;
 }
 
-.input-field label:not(.label-icon).active {
+
+.focused-input-blue {
   color: $bright-blue !important;
 }
 
