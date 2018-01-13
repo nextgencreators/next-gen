@@ -19,7 +19,7 @@
         {% do assets.addCss('https://fonts.googleapis.com/icon?family=Material+Icons') %}
         {% do assets.addCss('theme://css/css/normalize.css') %}
         {% do assets.addCss('theme://css/css/materialize.css') %}
-        {% do assets.addCss('theme://css/css/main.css') %}
+        {% do assets.addCss('theme://css/css/min.css') %}
     {% endblock %}
     {{ assets.css() }}
 
@@ -29,7 +29,7 @@
 <body>
   {% block content %}{% endblock %}
 
-    <img class="responsive-tri" src="{{ url('theme://images/triangles.png') }}">
+    <!-- <img class="responsive-tri" src="{{ url('theme://images/triangles.png') }}"> -->
   <footer class="page-footer"></footer>
 
 

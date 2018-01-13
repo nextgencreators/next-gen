@@ -19,7 +19,7 @@
         {% do assets.addCss('https://fonts.googleapis.com/icon?family=Material+Icons') %}
         {% do assets.addCss('theme://css/css/normalize.css') %}
         {% do assets.addCss('theme://css/css/materialize.css') %}
-        {% do assets.addCss('theme://css/css/main.css') %}
+        {% do assets.addCss('theme://css/css/min.css') %}
     {% endblock %}
     {{ assets.css() }}
 
@@ -27,24 +27,18 @@
 {% endblock head %}
 </head>
 <body>
-   <div id="top-nav">
-      <a href="{{ base_url }}"><img class="logo" src="{{ url('theme://images/logo.png') }}"></a>
-      <input id="burger" type="checkbox" />
-      <label for="burger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-      </label>
-      <nav>
-       {% include 'partials/navigation.html.twig' %} 
-        
-      </nav>
-    </div>
+
+<div class="nav z-depth-1">
+  <a href="{{ base_url }}"><img class="logo" src="{{ url('theme://images/logo.png') }}"></a>
+  {% include 'partials/navigation.html.twig' %} 
+</div>
+  
+   
     <main>
   {% block content %}
   {% endblock %}
     </main>
-    <img class="responsive-tri" src="{{ url('theme://images/triangles.png') }}">
+    <!-- <img class="responsive-tri" src="{{ url('theme://images/triangles.png') }}"> -->
   <footer class="page-footer"></footer>
 
 

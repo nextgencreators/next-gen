@@ -1,5 +1,15 @@
 var jq321 = $.noConflict(true);
 
+(function($) {
+  $(window).on("scroll", function() {
+    if($(window).scrollTop() > 50) {
+        $(".nav").addClass("active");
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $(".nav").removeClass("active");
+    }
+  });
+}(jq321));
 
 // fix floating label bug
 (function($) {
@@ -52,7 +62,7 @@ var jq321 = $.noConflict(true);
 }(jq321));
 
 
-// about.htm pagination 
+// about.html pagination 
 var num = 1;
 showDiv(num);
 
@@ -137,12 +147,12 @@ function showDiv(n) {
 
 // about.html
 
-var map;
-function initMap() {
-map = new google.maps.Map(document.getElementById('map'), {
-  center: {lat: -34.397, lng: 150.644},
-  zoom: 8
-});
-}
+// var map;
+// function initMap() {
+// map = new google.maps.Map(document.getElementById('map'), {
+//   center: {lat: -34.397, lng: 150.644},
+//   zoom: 8
+// });
+// }
 
 
