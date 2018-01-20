@@ -17,6 +17,7 @@ html, body{
   min-height: 100vh;
   flex-direction: column;
   font-family: $lato, sans-serif;
+  -webkit-font-smoothing: antialiased
 }
 
 .responsive-tri {
@@ -29,13 +30,6 @@ main {
   flex: 1 0 auto;
   margin-top: 1em;
 }
-.page-footer {
-  padding-top: 2.2em !important;
-  background-color: $top-bg !important;
-  z-index: 1;
-}
-
-
 
 .container {
   background-color: $center-bg;
@@ -234,9 +228,23 @@ replacement for background-attachment: fixed */
   font-size: 22px !important;
 }
 
-
-
-
+#madeby-icon {
+  margin: 0 3px;
+  font-size: 15px;
+  &.fa-heart {color: #ee4035;}
+  &.fa-code {color:#8EF6FF;}
+  &.fa-cogs {color:#e2f0ff;}
+  &.fa-coffee {color:#c4a378;}
+  &.fa-code-fork {color:#9ce80d;}
+  &.fa-fire {color:#ffa500;}
+  &.fa-wifi {color:#b3c7ff}
+  &.fa-bolt {color:#ffd420;}
+  &.fa-flask {color:#43e8d8;}
+  &.fa-paper-plane {color:#ff7b95}
+  &.fa-terminal {color:#c1c1c1;}
+  &.fa-bug {color:#a8b0bb;}
+  &.fa-magic {color:#7b5eff;}
+}
 
 /*.home-programs img programs-img {
   padding-left: 2em;
@@ -1047,7 +1055,22 @@ float: left;
 padding-top: 7px !important;
 padding: 0 6%;
 }
+.logo-footer {
+  height: 3em;
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
+}
+.footer-details {
+  display: inline-block;
+}
+.footer-left-icon {
+  padding-right: 5px;
+}
+.page-footer {
+  background-color: $top-bg !important;
 
+}
 /* based off of https://codepen.io/philhoyt/pen/ujHzd*/
 .nav {
   font-size: 1rem;

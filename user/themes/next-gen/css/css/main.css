@@ -7,7 +7,8 @@ html, body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased; }
 
 .responsive-tri {
   max-height: 36vh;
@@ -16,11 +17,6 @@ html, body {
 main {
   flex: 1 0 auto;
   margin-top: 1em; }
-
-.page-footer {
-  padding-top: 2.2em !important;
-  background-color: #2e343f !important;
-  z-index: 1; }
 
 .container {
   background-color: #3a414f; }
@@ -190,6 +186,36 @@ replacement for background-attachment: fixed */
 
 .home-fs i {
   font-size: 22px !important; }
+
+#madeby-icon {
+  margin: 0 3px;
+  font-size: 15px; }
+  #madeby-icon.fa-heart {
+    color: #ee4035; }
+  #madeby-icon.fa-code {
+    color: #8EF6FF; }
+  #madeby-icon.fa-cogs {
+    color: #e2f0ff; }
+  #madeby-icon.fa-coffee {
+    color: #c4a378; }
+  #madeby-icon.fa-code-fork {
+    color: #9ce80d; }
+  #madeby-icon.fa-fire {
+    color: #ffa500; }
+  #madeby-icon.fa-wifi {
+    color: #b3c7ff; }
+  #madeby-icon.fa-bolt {
+    color: #ffd420; }
+  #madeby-icon.fa-flask {
+    color: #43e8d8; }
+  #madeby-icon.fa-paper-plane {
+    color: #ff7b95; }
+  #madeby-icon.fa-terminal {
+    color: #c1c1c1; }
+  #madeby-icon.fa-bug {
+    color: #a8b0bb; }
+  #madeby-icon.fa-magic {
+    color: #7b5eff; }
 
 /*.home-programs img programs-img {
   padding-left: 2em;
@@ -861,6 +887,21 @@ input:not([type]):focus:not([readonly]) + label, input[type]:not(.browser-defaul
   float: left;
   padding-top: 7px !important;
   padding: 0 6%; }
+
+.logo-footer {
+  height: 3em;
+  position: relative;
+  display: inline-block;
+  padding-right: 10px; }
+
+.footer-details {
+  display: inline-block; }
+
+.footer-left-icon {
+  padding-right: 5px; }
+
+.page-footer {
+  background-color: #2e343f !important; }
 
 /* based off of https://codepen.io/philhoyt/pen/ujHzd*/
 .nav {

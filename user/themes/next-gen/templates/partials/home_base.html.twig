@@ -20,6 +20,7 @@
         {% do assets.addCss('theme://css/css/normalize.css') %}
         {% do assets.addCss('theme://css/css/materialize.css') %}
         {% do assets.addCss('theme://css/css/main.css') %}
+        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css') %}
     {% endblock %}
     {{ assets.css() }}
 
@@ -28,11 +29,21 @@
 </head>
 <body>
   {% block content %}{% endblock %}
-
     <!-- <img class="responsive-tri" src="{{ url('theme://images/triangles.png') }}"> -->
-  <footer class="page-footer"></footer>
-
-
+  <footer class="page-footer"> 
+    <div class="row">
+        <div class="col s6">
+            <a href="{{ base_url }}"><img class="logo-footer" src="{{ url('theme://images/logo.png') }}"></a>
+            <div class="footer-details">
+                <p class="top-align-p white-text"><i class="footer-left-icon fa fa-envelope"></i>{{ page.find('/home').header.contact_email }}</p>
+                <p class="top-align-p white-text"><i class="footer-left-icon fa fa-phone"></i>{{ page.find('/home').header.contact_number }}</p>
+            </div>
+        </div>
+        <div class="col s6 right-align">
+             <p>Made with <i id="madeby-icon" class="fa"></i> by <a href="#" target="_blank">Elixir Labs</a></p>
+        </div>
+    </div>
+  </footer>
 
 
  {% block javascripts %}
