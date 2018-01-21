@@ -3,9 +3,9 @@
 {% block content %}
 <div class="container page-container">
   <h3 class="page-header white-text">{{ header.page_title }}</h3>
-  <div class="row white-text muli">
+  <div class="row white-text source-sans-pro">
       <div class="col l8 m12">
-    <p class="white-text muli">{{ page.content }}</p>
+    <p class="white-text source-sans-pro">{{ page.content }}</p>
       </div>
     </div>
     <div class="row">
@@ -58,7 +58,7 @@
     {% endif %}
     {% if loop.index == 1 %}
     <!-- hardcoded style classes -->
-    <p class="white-text muli">Tell us what you want us to know about you.</p>
+    <p class="white-text source-sans-pro">Tell us what you want us to know about you.</p>
     <div class="container-inner-inner">
     	<div class="volunteer-section">
     {% endif %}
@@ -67,7 +67,7 @@
      {% if loop.index == 2 %}
     	</div>
     	</div>
-    	<p class="white-text muli top-padding">Now tell us how to get in touch with you!</p>
+    	<p class="white-text source-sans-pro top-padding">Now tell us how to get in touch with you!</p>
     	<div class="container-inner-inner">
     {% endif %}
   {% endfor %}
