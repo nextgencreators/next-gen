@@ -123,16 +123,15 @@ main {
   padding-top: 2em;
 }
 
-
 .hero {
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #3a414f;
   position: relative;
   background-image: url('../../images/hero.jpg');
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
+/*  background-attachment: fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -184,20 +183,6 @@ main {
   font-size: 2rem;
   transform: translate(-50%, -50%);
 }
-/*
-.mid h2 {
-  font-weight: 400;
-  color: white;
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 2rem;
-    transform: translate(-50%, -50%);
-    top: 50%;
-  left: 50%;
-  display: inline-block;
-  position: absolute;
-
-}*/
 
 .rarrow {
   color: $green;

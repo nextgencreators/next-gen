@@ -1,6 +1,10 @@
 {% set programs = page.collection({'items':{'@page.children': '/about/programs'}, 'pagination': true, 'limit': 10, 'order': {'by': 'default', 'dir': 'asc'}}) %}
 {% extends 'partials/home_base.html.twig' %}
 {% block content %}
+<script>
+  // Center all the things!
+  
+</script>
 <div class="hero">
   <div class="nav z-depth-1">
      <a href="{{ base_url }}"><img class="logo" src="{{ url('theme://images/logo.png') }}"></a>
@@ -88,7 +92,7 @@
          </div>
          <div class="row">
             <div class="col l8 push-l2 pull-l2 m10 push-m1 pull-m1 s12 home-below-text center left-align">
-               <p class="white-text source-sans-pro-bold">{{ page.header.join_community_caption }}</p>
+               <p class="white-text source-sans-pro">{{ page.header.join_community_caption }}</p>
                <a class="waves-effect waves-light center btn" href="community/">join us</a>
             </div>
          </div>
