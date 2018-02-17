@@ -1,18 +1,14 @@
 {% set programs = page.collection({'items':{'@page.children': '/about/programs'}, 'pagination': true, 'limit': 10, 'order': {'by': 'default', 'dir': 'asc'}}) %}
 {% extends 'partials/home_base.html.twig' %}
 {% block content %}
+<script>
+  // Center all the things!
+  
+</script>
 <div class="hero">
-   <div id="top-nav">
-      <a href="{{ base_url }}"><img class="logo" src="{{ url('theme://images/logo.png') }}"></a>
-      <input id="burger" type="checkbox" />
-      <label for="burger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-      </label>
-      <nav>
-         {% include 'partials/navigation.html.twig' %} 
-      </nav>
+  <div class="nav z-depth-1">
+     <a href="{{ base_url }}"><img class="logo" src="{{ url('theme://images/logo.png') }}"></a>
+     {% include 'partials/navigation.html.twig' %} 
    </div>
    <div class="row left-align cont">
       <div class="section"></div>
@@ -96,7 +92,7 @@
          </div>
          <div class="row">
             <div class="col l8 push-l2 pull-l2 m10 push-m1 pull-m1 s12 home-below-text center left-align">
-               <p class="white-text muli-bold">{{ page.header.join_community_caption }}</p>
+               <p class="white-text source-sans-pro">{{ page.header.join_community_caption }}</p>
                <a class="waves-effect waves-light center btn" href="community/">join us</a>
             </div>
          </div>
@@ -113,8 +109,8 @@
          <div class="col center-align s12 m7 spacing">
             <p class="white-text zero-line-height">{{ page.header.contact_us.subtext }}</p>
          </div>
-         <p class="top-align-p white-text">Email: {{ page.header.contact_email }}</p>
-         <p class="white-text">Cell-Phone: {{ page.header.contact_number }}</p>
+         {# <p class="top-align-p white-text">Email: {{ page.header.contact_email }}</p>
+         <p class="white-text">Cell-Phone: {{ page.header.contact_number }}</p> #}
          <div class="row center">
             <div class="col s12 l8 push-l2 pull-l2">
                {% include 'forms/form.html.twig' %}

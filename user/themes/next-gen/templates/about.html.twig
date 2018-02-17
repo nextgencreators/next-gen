@@ -11,7 +11,7 @@
    <div class="section">
    <div class="row">
          <div class="col m12 l7 gi-header">
-           <p class="white-text muli top-align-p spacing">{{ page.header.about_text }}</p>
+           <p class="white-text source-sans-pro top-align-p spacing">{{ page.header.about_text }}</p>
         </div>
          <div class="col m10 push-m1 pull-m1 l5">
              <img class="responsive-img z-depth-2" src="{{ page.header.about_img|first.path }}">
@@ -30,21 +30,21 @@
             <div class="icon-block">
                <h2 class="center light-blue-text"><i class="approach-icon material-icons">{{ page.header.quality1_icon }}</i></h2>
                <h5 class="white-text center">{{ page.header.quality1 }}</h5>
-               <p class="white-text muli light">{{ page.header.quality1_description }}</p>
+               <p class="white-text source-sans-pro light">{{ page.header.quality1_description }}</p>
             </div>
          </div>
          <div class="col s12 m4">
             <div class="icon-block">
                <h2 class="center light-blue-text"><i class="approach-icon material-icons">{{ page.header.quality2_icon }}</i></h2>
                <h5 class="white-text center">{{ page.header.quality2 }}</h5>
-               <p class="white-text muli light">{{ page.header.quality2_description }}</p>
+               <p class="white-text source-sans-pro light">{{ page.header.quality2_description }}</p>
             </div>
          </div>
          <div class="col s12 m4">
             <div class="icon-block">
                <h2 class="center light-blue-text"><i class="approach-icon material-icons">{{ page.header.quality3_icon }}</i></h2>
                <h5 class="white-text center">{{ page.header.quality3 }}</h5>
-               <p class="white-text muli light">{{ page.header.quality3_description }}</p>
+               <p class="white-text source-sans-pro light">{{ page.header.quality3_description }}</p>
             </div>
          </div>
       </div>
@@ -63,7 +63,7 @@
       </div>
       <div class="row">
         <div class="col s10 push-s1 pull-s1">
-           <p class="white-text muli">{{ page.header.fund_allocation_description }}</p>
+           <p class="white-text source-sans-pro">{{ page.header.fund_allocation_description }}</p>
         </div>
       </div>
  </div>
@@ -118,7 +118,7 @@
         {% for faq in page.header.faq %}
           <li>
             <div class="collapsible-header"><i class="arrow material-icons">keyboard_arrow_right</i>{{ faq.question }}</div>
-            <div class="collapsible-body"><span class="muli">{{ faq.answer }}</span></div>
+            <div class="collapsible-body"><span class="source-sans-pro">{{ faq.answer }}</span></div>
           </li>
         {% endfor %}
       </ul>

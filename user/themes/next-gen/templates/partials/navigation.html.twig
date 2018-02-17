@@ -1,57 +1,32 @@
-{% macro loop(page) %}
-    {% for p in page.children.visible %}
-        {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}
-        {% if p.children.visible.count > 0 %}
-            <li class="has-children {{ current_page }}">
-                <a href="{{ p.url }}">
-                    {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
-                    {{ p.menu }}
-                </a>
-                <ul>
-                    {{ _self.loop(p) }}
-                </ul>
-            </li>
-        {% else %}
-            <li class="{{ current_page }}">
-                <a href="{{ p.url }}">
-                    {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
-                    {{ p.menu }}
-                </a>
-            </li>
-        {% endif %}
-    {% endfor %}
-{% endmacro %}
-
 <ul>
-    {% if theme_config.dropdown.enabled %}
-        {{ _self.loop(pages) }}
-    {% else %}
-        {% for page in pages.children.visible %}
-            {% set current_page = (page.active or page.activeChild) ? 'selected' : '' %}
-            <li class="{{ current_page }}">
-                <a href="{{ page.url }}">
-                    {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
-                    {{ page.menu }}
-                </a>
-                <ul class="dropdown">
-            
-            {% for childpage in page.children %}
-                {% set c_page = (childpage.active or childpage.activeChild) ? 'selected' : '' %}
-            <li class="{{ c_page }}">
-                <a href="{{ childpage.url }}">
-                    {% if childpage.header.icon %}<i class="fa fa-{{ childpage.header.icon }}"></i>{% endif %}
-                    {{ childpage.menu }}
-                </a>
-            </li>
-            {% endfor %}
-            </ul>
-            </li>
+    {% for page in pages.children.visible %}
+        {% set current_page = (page.active or page.activeChild) ? 'selected' : '' %}
+        <li>
+            <a href="{{ page.url }}">
+                {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
+                {{ page.menu }}
+            </a>
 
+        {% if page.children|length > 0 %}
+         <ul class="z-depth-2">
+        {% for childpage in page.children %}
+            {% set c_page = (childpage.active or childpage.activeChild) ? 'selected' : '' %}
+        <li>
+            <a href="{{ childpage.url }}">
+                {% if childpage.header.icon %}<i class="fa fa-{{ childpage.header.icon }}"></i>{% endif %}
+                {{ childpage.menu }}
+            </a>
+        </li>
         {% endfor %}
-    {% endif %}
+        </ul>
+        {% endif %}
+        </li>
+
+    {% endfor %}
+
     {% for mitem in site.menu %}
         <li>
-            <a href="{{ mitem.url }}">
+            <a href="{{ mitem.base_url_relative }}">
                 {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
                 {{ mitem.text }}
             </a>

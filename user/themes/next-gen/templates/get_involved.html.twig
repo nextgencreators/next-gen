@@ -94,8 +94,8 @@
           {% for way in page.header.other_ways %}
             <li>
               <div class="collapsible-header white-text"><i class="arrow material-icons">keyboard_arrow_right</i>{{ way.name }}</div>
-              <div class="collapsible-body white-text muli">
-                <span class="muli">{{ way.description }}</span>
+              <div class="collapsible-body white-text source-sans-pro">
+                <span class="source-sans-pro">{{ way.description }}</span>
                 {% if way.url_bottom|length > 0 %}
                   <br><a href="{{ way.url_bottom }}" style="text-decoration:underline;">Learn More</a>
                 {% endif %}
