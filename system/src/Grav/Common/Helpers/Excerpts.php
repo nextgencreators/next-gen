@@ -12,7 +12,6 @@ use Grav\Common\Grav;
 use Grav\Common\Page\Page;
 use Grav\Common\Uri;
 use Grav\Common\Page\Medium\Medium;
-use Grav\Common\Utils;
 use RocketTheme\Toolbox\Event\Event;
 use RocketTheme\Toolbox\ResourceLocator\UniformResourceLocator;
 
@@ -322,7 +321,7 @@ class Excerpts
      */
     protected static function parseUrl($url)
     {
-        $url_parts = Utils::multibyteParseUrl($url);
+        $url_parts = parse_url($url);
 
         if (isset($url_parts['scheme'])) {
             /** @var UniformResourceLocator $locator */

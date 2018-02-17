@@ -1,5 +1,5 @@
 ---
-title: 'Hackathons (Coders of the Caribbean)'
+title: Hackathons
 ---
 
-Our annual hackathon, Coders Of The Caribbean, provides the perfect playground for aspiring and existing developers  and creatives to spend an entire weekend bringing their ideas to life. These techies then pitch it to a panel of judges.
+In life there will be road blocks but we will over come it. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. To succeed you must believe. When you believe, you will succeed. Cloth talk. The key to success is to keep your head above the water, never give up.
