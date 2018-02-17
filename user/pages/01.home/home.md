@@ -18,7 +18,7 @@ join_community_caption: 'You see the hedges, how I got it shaped up? It’s impo
 programs:
     subtext: copywritingcopywritingcopywritingcopywriting
 contact_us:
-    subtext: copywritingcopywritingcopywritingcopywriting
+    subtext: 'We''ll get back to you as soon as we can!'
 contact_email: info@nextgencreators.com
 contact_number: 876-451-3421
 sponsors_donors:
